@@ -4,7 +4,9 @@
     {% assign owner_first_name = site.owner | split: " " %}
     {% assign base_url = "" %}
     {% if page.category != null %}
-      {% assign base_url = page.category | prepend: site.baseurl | replace: '//', '/' %}
+      {% assign base_url = page.category | prepend: "/" %}
+    {% else %}
+    {% assign base_url = page.title | prepend: "/" %}
     {% endif %}
     <h1>root@{{ owner_first_name[0] }}:~{{base_url}}#</h1>
     </a>

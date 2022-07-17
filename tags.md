@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /tags
+permalink: /tags/
 title: Tags
 ---
 

@@ -1,8 +1,7 @@
 ---
 layout: page
-permalink: /categories
+permalink: /categories/
 title: Categories
-category: Categories
 ---
 
 {% for category in site.categories %}
