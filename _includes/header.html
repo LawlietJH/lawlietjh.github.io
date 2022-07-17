@@ -1,0 +1,15 @@
+<header>
+  <div>
+    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+    {% assign owner_first_name = site.owner | split: " " %}
+    {% assign base_url = "" %}
+    {% if page.category != null %}
+      {% assign base_url = page.category | prepend: site.baseurl | replace: '//', '/' %}
+    {% endif %}
+    <h1>root@{{ owner_first_name[0] }}:~{{base_url}}#</h1>
+    </a>
+    <div class="header-links">
+      {% include links.html %}
+    </div>
+  </div>
+</header>
