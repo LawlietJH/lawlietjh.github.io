@@ -4,23 +4,28 @@ permalink: /categories/
 title: Categories
 ---
 
-{% for category in site.categories %}
-  <!-- {% if category == null %}
-    General
-  {% endif %} -->
+{% assign site_categories_sort = site.categories | sort %}
+{% for category in site_categories_sort %}
   <div class="category-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <h2 class="category-head">{{ category_name }}</h2>
-    <a name="{{ category_name | slugize }}"></a>
+    <div id="{{ category_name | slugize }}"></div>
+    <h2 class="category-head">
+      <a href="#{{ category_name | slugize }}">
+        {{ category_name }}
+      </a>
+    </h2>
     <ul>
+    {% assign site_time = site.time | date: '%s' | plus: 0 %}
     {% for post in site.categories[category_name] %}
-    <li>
-      <h3>
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{post.title}}</a><br>
-          <time>{{ post.date | date:"%d %b %Y" }}</time>
-      </h3>
-    </li>
+      {% assign post_date = post.date | date: '%s' | plus: 0 %}
+      {% if site_time >= post_date or site.debug == true %}
+        <li>
+          <h3>
+              <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{post.title}}</a><br>
+              <time>{{ post.date | date:"%d %b %Y" }}</time>
+          </h3>
+        </li>
+      {% endif %}
     {% endfor %}
     </ul>
   </div>

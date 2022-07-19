@@ -17,7 +17,7 @@ body {
   // background: $body-background url("../assets/bkg.png") 0 0;
   background: linear-gradient(#1f1f27, #111119);
   // color: $body-foreground;
-  color: #d7e7eb;
+  color: #d4ffff; //#d7e7eb;
   font-size: 16px;
   line-height: 1.5;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -34,10 +34,6 @@ body {
 section {
   display: block;
   margin: 0 0 20px 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 20px;
 }
 
 li {
@@ -72,7 +68,7 @@ header h1 {
   text-align: center;
   font-weight: bold;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #96f400;
+  color: #6fff00; //#96f400;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
@@ -81,7 +77,7 @@ header h1 {
 }
 
 header h1:hover {
-  color: #a6ff00;
+  color: #8cff00;
   text-shadow: 0 0 5px rgba(181, 232, 83, 0.5);
 }
 
@@ -107,14 +103,18 @@ section img {
   max-width: 100%
 }
 
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: $header;
+  color: #96f400; //$header;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
                0 0 10px rgba(181, 232, 83, 0.1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 20px;
 }
 
 #main_content h1 {
@@ -125,8 +125,17 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
 }
 
-h2.post-title {
+h2.post-title,
+h2.tag-head a,
+h2.category-head a,
+h3.archives-head a {
   color: #96f400;
+}
+
+h2.tag-head a:hover,
+h2.category-head a:hover,
+h3.archives-head a:hover {
+  color: #9dff00;
 }
 
 h4.post-tags {
@@ -180,6 +189,14 @@ ul li {
 
 ul li p {
   color: #d4ffff;
+}
+
+p strong {
+  color: #aaffff;
+}
+
+p em {
+  color: #aaffff;
 }
 
 //Item Level 1
@@ -334,19 +351,19 @@ a:active, a:focus {
 /* Make footer stick to bottom */
 
 .pagination, footer {
-  height: 50px;
-  line-height: 50px;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
 }
 
-footer span {
-  color: #96f400;
-  text-shadow: 0 0 5px rgba(200, 255, 111, 0.5);
+footer a {
+  color: #8cff00;
+  text-shadow: 0 0 5px rgba(200, 255, 111, 0.6);
 }
 
-footer span:hover {
-  color: #b2ff36;
-  text-shadow: 0 0 5px rgba(189, 255, 82, 0.5);
+footer a:hover {
+  color: #6fff00;
+  text-shadow: 0 0 10px rgba(203, 255, 163, 0.9);
 }
 
 #wrapper {
