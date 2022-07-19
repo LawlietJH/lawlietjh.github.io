@@ -2,7 +2,7 @@
 title: "¿Qué es la Free Software Fundation (FSF)?"
 category: "Software Libre"
 tags: ["Software Libre", Información]
-date: 2022-07-20 21:00
+date: 2022-07-19 21:01
 published: true
 ---
 
@@ -12,7 +12,7 @@ Esta es una organización sin fines de lucro con la misión mundial de promover 
 
 La *FSF* centra su trabajo fundamentalmente en asuntos legales, organizativos y promocionales en beneficio de la comunidad de usuarios de *software libre*.
 
-La fundación continuó los proyectos existentes de *GNU*, como la venta de manuales y cintas, y contrató a desarrolladores del sistema de *software libre*. Desde entonces, ha continuado con estas actividades, además de abogar por el movimiento del software libre.
+La fundación continuó los proyectos existentes de <a href="Que-es-GNU">GNU</a>, como la venta de manuales y cintas, y contrató a desarrolladores del sistema de *software libre*. Desde entonces, ha continuado con estas actividades, además de abogar por el movimiento del software libre.
 
 También es la administradora de varias licencias de *software libre*, lo que significa que las publica y tiene la capacidad de realizar revisiones según sea necesario.
 
@@ -24,7 +24,7 @@ Desde 1991 hasta 2001, la aplicación de la *GPL* se hizo de manera informal, ge
 
 ### Licencias GNU
 
-La *FSF* elabora, mantiene y defiende la *Licencia Pública General GNU* (*GNU GPL*), la licencia de software libre más utilizada, cuya última versión es la **GPLv3** que fue publicada en forma definitiva en junio de 2007. También es responsable de la [*GNU LGPL\|Licencia Pública General Reducida GNU*] (*GNU LGPL*) y la *Licencia de documentación libre GNU* (*GNU iFDL*). Tiene recursos y voluntad para hacer cumplir las licencias que elabora, pero solo puede presentar demandas sobre software del cual posea derechos de autor. La fundación se enfrenta cada año a unas 50 violaciones de la *GPL* y siempre trata de evitar llegar a los tribunales.
+La *FSF* elabora, mantiene y defiende la *Licencia Pública General GNU* (<a href="Tipos-de-Licencias-de-Software-Libre#GNU LGPL">GNU GPL</a>), la licencia de software libre más utilizada, cuya última versión es la **GPLv3** que fue publicada en forma definitiva en junio de 2007. También es responsable de la [*GNU LGPL\|Licencia Pública General Reducida GNU*] (*GNU LGPL*) y la *Licencia de documentación libre GNU* (*GNU iFDL*). Tiene recursos y voluntad para hacer cumplir las licencias que elabora, pero solo puede presentar demandas sobre software del cual posea derechos de autor. La fundación se enfrenta cada año a unas 50 violaciones de la *GPL* y siempre trata de evitar llegar a los tribunales.
 
 <div id="Alojamiento de Proyectos"><br></div>
 

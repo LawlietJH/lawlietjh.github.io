@@ -4,14 +4,6 @@ layout: default
 
 <ul>
   {% assign site_time = site.time | date: '%s' | plus: 0 %}
-  <!-- {% for post_tmp in paginator.posts %}
-    {% assign post_date_tmp = post_tmp.date | date: '%s' | plus: 0 %}
-    {% if site_time >= post_date_tmp or site.debug == true %}
-      {% capture paginator_posts %}
-        post_tmp
-      {% endcapture %}
-    {% endif %}
-  {% endfor %} -->
   {% for post in paginator.posts %}
     {% assign post_date = post.date | date: '%s' | plus: 0 %}
     {% if site_time >= post_date or site.debug == true %}

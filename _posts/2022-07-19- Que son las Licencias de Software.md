@@ -2,7 +2,7 @@
 title: "¿Qué son las Licencias de Software?"
 category: "Software Libre"
 tags: ["Software Libre", Información]
-date: 2022-07-21 21:00
+date: 2022-07-19 21:02
 published: true
 ---
 

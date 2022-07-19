@@ -2,7 +2,7 @@
 title: "¿Qué es Unix?"
 category: "Linux"
 tags: ["Linux", Información]
-date: 2022-07-23 21:00
+date: 2022-07-20 21:00
 published: true
 ---
 
@@ -13,4 +13,4 @@ Un sistema **Unix** puede dividirse en tres áreas básicas:
 * El intérprete de comandos y algunos programas utilitarios.
 * Lo demás que necesitas, como las aplicaciones de usuario o la interfaz gráfica, son paquetes adicionales.
 
-Por sus características técnicas y su filosofía abierta, existen diversos sistemas operativos que se conocen como derivados de Unix o sistemas de la familia *Unix*. Entre estos están *FreeBSD* y *GNU/Linux*; macOS también es un sistema *Unix*, al igual que *Android* (derivado de *Linux*) e *iOS* (derivado de *Mac OS X*).
+Por sus características técnicas y su filosofía abierta, existen diversos sistemas operativos que se conocen como derivados de Unix o sistemas de la familia *Unix*. Entre estos están *FreeBSD* y <a href="Que-es-GNU-Linux">GNU/Linux</a>; macOS también es un sistema *Unix*, al igual que *Android* (derivado de *Linux*) e *iOS* (derivado de *Mac OS X*).

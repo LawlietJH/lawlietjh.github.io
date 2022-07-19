@@ -2,7 +2,7 @@
 title: "Tipos de Licencias de Software Libre"
 category: "Software Libre"
 tags: ["Software Libre", Información]
-date: 2022-07-22 21:00
+date: 2022-07-19 21:03
 published: true
 ---
 
