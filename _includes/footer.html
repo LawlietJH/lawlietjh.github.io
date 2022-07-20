@@ -1,5 +1,14 @@
 <footer>
-  <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
-    Página Principal
-  </a>
+  {%if page.title %}
+    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+      Página Principal
+    </a>
+  {% else %}
+    <span>
+      Github:
+      <a href="https://github.com/LawlietJH" target="_blank">
+        LawlietJH
+      </a>
+    </span>
+  {% endif %}
 </footer>

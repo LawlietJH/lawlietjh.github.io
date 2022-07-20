@@ -350,8 +350,13 @@ a:active, a:focus {
 
 /* Make footer stick to bottom */
 
+.pagination-change-mark {
+  font-size: 26px;
+}
+
 .pagination, footer {
   height: 100px;
+  font-size: 18px;
   line-height: 100px;
   text-align: center;
 }
