@@ -12,7 +12,7 @@ Esta es una organización sin fines de lucro con la misión mundial de promover 
 
 La *FSF* centra su trabajo fundamentalmente en asuntos legales, organizativos y promocionales en beneficio de la comunidad de usuarios de *software libre*.
 
-La fundación continuó los proyectos existentes de <a href="Que-es-GNU">GNU</a>, como la venta de manuales y cintas, y contrató a desarrolladores del sistema de *software libre*. Desde entonces, ha continuado con estas actividades, además de abogar por el movimiento del software libre.
+La fundación continuó los proyectos existentes de <a href="/Linux/Que-es-GNU">GNU</a>, como la venta de manuales y cintas, y contrató a desarrolladores del sistema de *software libre*. Desde entonces, ha continuado con estas actividades, además de abogar por el movimiento del software libre.
 
 También es la administradora de varias licencias de *software libre*, lo que significa que las publica y tiene la capacidad de realizar revisiones según sea necesario.
 

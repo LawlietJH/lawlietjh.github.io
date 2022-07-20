@@ -1,4 +1,8 @@
+# En General:
 _site
 .sass-cache
 .jekyll-cache
 .vscode
+
+# Otros:
+_posts/**/*.txt
