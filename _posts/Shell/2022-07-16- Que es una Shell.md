@@ -14,7 +14,7 @@ Dependiendo del tipo de interfaz que empleen, los shells pueden ser:
 * Gráficos (GUI, Graphical User Interface).
 * De lenguaje natural (NUI, Natural User Interface).
 
-Estos son necesarios para invocar o ejecutar los distintos programas disponibles en la computadora. Un ejemplo de ello en Windows es `PowerShell`, en <a href="/Linux/Que-es-GNU-Linux">GNU/Linux</a> es <a href="Origenes-de-las-Shell-que-conocemos#Bash">Bash</a> y en MacOS es <a href="Origenes-de-las-Shell-que-conocemos#Zsh">Zsh</a> (también se puede utilizar en sistemas de GNU/Linux).
+Estos son necesarios para invocar o ejecutar los distintos programas disponibles en la computadora. Un ejemplo de ello en Windows es `PowerShell`, en <a href="/linux/Que-es-GNU-Linux">GNU/Linux</a> es <a href="Origenes-de-las-Shell-que-conocemos#Bash">Bash</a> y en MacOS es <a href="Origenes-de-las-Shell-que-conocemos#Zsh">Zsh</a> (también se puede utilizar en sistemas de GNU/Linux).
 
 Ejemplo: Ejecución del comando `ls` en Bash para listar el contenido de un directorio.
 ```bash

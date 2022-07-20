@@ -14,7 +14,7 @@ El sistema operativo <a href="Que-es-Unix">UNIX</a> fue creado por los laborator
 
 ### GNU
 
-<a href="Que-es-GNU">GNU</a> se inició en 1983 por <a href="/Software Libre/Quien-es-Richard-Stallman">Richard Stallman</a>. Tiene como objetivo el desarrollo de un sistema operativo Unix completo y compuesto enteramente de Software libre.
+<a href="Que-es-GNU">GNU</a> se inició en 1983 por <a href="/software libre/Quien-es-Richard-Stallman">Richard Stallman</a>. Tiene como objetivo el desarrollo de un sistema operativo Unix completo y compuesto enteramente de Software libre.
 
 ### GNU Hurd
 
@@ -26,7 +26,7 @@ A principios de los años 90, <a href="Quien-es-Linus-Torvalds">Linus Torvalds</
 
 *GNU/Linux* es uno de los términos empleados para referirse a la combinación del núcleo libre similar a Unix denominado *Linux* con el sistema operativo *GNU*.
 
-Lo que realmente marcó la diferencia y el éxito de este proyecto fue la licencia de uso: el proyecto GNU creó la licencia de software <a href="/Software Libre/Tipos-de-Licencias-de-Software-Libre#GNU LGPL">GPL</a>, una licencia que garantiza libertades en el uso, modificación y colaboración respecto al software. Así que Linux y las herramientas de *GNU* son desarrolladas, revisadas, mejoradas y adaptadas por miles de usuarios y cientos de empresas alrededor del mundo. Además, este conjunto está disponible sin costo y su código fuente es abierto.
+Lo que realmente marcó la diferencia y el éxito de este proyecto fue la licencia de uso: el proyecto GNU creó la licencia de software <a href="/software libre/Tipos-de-Licencias-de-Software-Libre#GNU LGPL">GPL</a>, una licencia que garantiza libertades en el uso, modificación y colaboración respecto al software. Así que Linux y las herramientas de *GNU* son desarrolladas, revisadas, mejoradas y adaptadas por miles de usuarios y cientos de empresas alrededor del mundo. Además, este conjunto está disponible sin costo y su código fuente es abierto.
 
 ### BSD
 
