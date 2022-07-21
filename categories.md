@@ -5,10 +5,21 @@ title: Categories
 ---
 
 {% assign site_categories_sort = site.categories | sort %}
+<p class="tabs-textcolor">Categorías:</p>
+<ul>
+{% for category in site_categories_sort %}
+  <li>
+    <a href="#{{category | first }}">
+      {{category | first }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+<div><br><hr><br></div>
 {% for category in site_categories_sort %}
   <div class="category-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="{{ category_name | slugize }}"></div>
+    <div id="{{ category_name | slugize }}"><br></div>
     <h2 class="category-head">
       <a href="#{{ category_name | slugize }}">
         {{ category_name }}

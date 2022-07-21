@@ -5,6 +5,17 @@ title: Tags
 ---
 
 {% assign site_tags_sort = site.tags | sort %}
+<p class="tabs-textcolor">Tags:</p>
+<ul>
+{% for tag in site_tags_sort %}
+  <li>
+    <a href="#{{tag | first }}">
+      {{tag | first }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+<div><br><hr><br></div>
 {% for tag in site_tags_sort %}
   <div class="tags-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
