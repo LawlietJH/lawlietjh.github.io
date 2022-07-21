@@ -30,7 +30,7 @@ El sistema operativo <a href="Que-es-Unix">UNIX</a> fue creado por los laborator
 
 ### GNU/Linux
 
-A principios de los años 90, <a href="Quien-es-Linus-Torvalds">Linus Torvalds</a> comenzó a escribir un sistema operativo que pudiera ejecutarse en un computador personal de la época. Al mismo tiempo, ya se desarrollaba otro proyecto con la intención de crear un sistema operativo tipo *Unix* gratuito: el proyecto *GNU*. Este proyecto tenía muchas herramientas listas, pero faltaba el núcleo del sistema. Fue cuestión de tiempo para que el núcleo Linux se distribuyera junto con las herramientas GNU, dando lugar a lo que hoy conocemos como <a href="Quien-es-GNU-Linux">GNU/Linux</a> o simplemente *Linux*, un sistema operativo libre de la familia *Unix*.
+A principios de los años 90, <a href="Quien-es-Linus-Torvalds">Linus Torvalds</a> comenzó a escribir un sistema operativo que pudiera ejecutarse en un computador personal de la época. Al mismo tiempo, ya se desarrollaba otro proyecto con la intención de crear un sistema operativo tipo *Unix* gratuito: el proyecto *GNU*. Este proyecto tenía muchas herramientas listas, pero faltaba el núcleo del sistema. Fue cuestión de tiempo para que el núcleo Linux se distribuyera junto con las herramientas GNU, dando lugar a lo que hoy conocemos como <a href="Que-es-GNU-Linux">GNU/Linux</a> o simplemente *Linux*, un sistema operativo libre de la familia *Unix*.
 
 *GNU/Linux* es uno de los términos empleados para referirse a la combinación del núcleo libre similar a Unix denominado *Linux* con el sistema operativo *GNU*.
 
