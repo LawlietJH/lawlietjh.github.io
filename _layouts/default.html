@@ -116,7 +116,7 @@
   {% include footer.html %}
   <!-- End Footer -->
 
-  {% if site.google_analytics %}
+  {% if site.debug == false and site.google_analytics %}
     {% include analytics.html %}
   {% endif %}
 

@@ -12,6 +12,7 @@ destination: ./_site/
 permalink: /:categories/:title
 paginate: 7
 paginate_path: /page/:num/
+google_analytics: ${{ secrets.ANALYTICS_ID }}
 
 defaults:
   -
