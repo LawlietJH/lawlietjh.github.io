@@ -3,14 +3,8 @@
 {% include head.html %}
 
 <body>
-
   <div id="wrapper">
-
-    <!-- Header -->
     {% include header.html %}
-    <!-- End Header -->
-
-    <!-- Paginator -->
     {% if paginator.total_pages > 1 %}
     <div class="pagination">
       {% if paginator.previous_page == 1 %}
@@ -54,19 +48,12 @@
       {% endif %}
     </div>
     {% endif %}
-    <!-- End Paginator -->
-
-    <!-- Content -->
     <div class="container">
       <section id="main_content">
         {{ content }}
       </section>
     </div>
-    <!-- End Content -->
-
   </div>
-
-  <!-- Paginator -->
   {% if paginator.total_pages > 1 %}
   <div class="pagination">
     {% if paginator.previous_page == 1 %}
@@ -110,16 +97,10 @@
     {% endif %}
   </div>
   {% endif %}
-  <!-- End Paginator -->
-
-  <!-- Footer -->
   {% include footer.html %}
-  <!-- End Footer -->
-
   {% if site.debug == false and site.google_analytics %}
     {% include analytics.html %}
   {% endif %}
-
 </body>
 
 </html>

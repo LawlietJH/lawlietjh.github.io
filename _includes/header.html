@@ -1,6 +1,5 @@
 <header>
   <div>
-    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
     {% assign owner_first_name = site.owner | split: " " %}
     {% assign base_url = "" %}
     {% if page.category != null %}
@@ -10,7 +9,22 @@
         {% assign base_url = page.title | prepend: "/" %}
       {% endif %}
     {% endif %}
-    <h1>root@{{ owner_first_name[0] }}:~{{base_url}}#</h1>
+    {% if page.title and page.category %}
+      <a class="header-block" href="/categories{{ page.category | prepend: '#' }}">
+        <dev class="header-subtitle-block">
+          root<span class="header-charscolor">@</span>{{ owner_first_name[0] }}<span class="header-charscolor">:~</span>{{base_url}}<span class="header-charscolor">#</span>
+          whoami
+        </dev>
+        <dev class="header-subtitle-block header-charscolor blink">|</dev>
+      </a>
+    {% else %}
+      <h2 class="header-subtitle">
+        {{site.description}}
+      </h2>
+    {% endif %}
+    <a class="header-block" href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+      <span class="header-title header-charscolor">❯</span>
+      <h1 class="header-title">{{site.title}}</h1>
     </a>
     <div class="header-links">
       {% include links.html %}

@@ -40,6 +40,8 @@ li {
   line-height: 1.4 ;
 }
 
+//--------------------------------------------
+
 /* Header, <header>
    header   - container
    h1       - project name
@@ -48,7 +50,7 @@ li {
 
 header {
   background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px dashed $conifer; //header;
+  border-bottom: 1px dashed #6fff00; //header;
   padding: 20px;
   margin: 0 0 40px 0;
 }
@@ -59,38 +61,107 @@ header {
 
 .header-link {
   display: inline;
-}
-
-header h1 {
-  font-size: 24px;
-  line-height: 1.5;
-  margin: 0;
-  text-align: center;
-  font-weight: bold;
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #6fff00; //#96f400;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
-               0 0 5px rgba(181, 232, 83, 0.1),
-               0 0 10px rgba(181, 232, 83, 0.1);
-  letter-spacing: -1px;
-  -webkit-font-smoothing: antialiased;
-}
-
-header h1:hover {
-  color: #8cff00;
-  text-shadow: 0 0 5px rgba(181, 232, 83, 0.5);
-}
-
-header h2 {
   font-size: 18px;
   font-weight: 300;
   color: #69857f;
 }
 
-header h2:hover {
+.header-link:hover {
   color: #6fb2a4;
   text-shadow: 0 0 5px rgba(55, 193, 221, 0.5);
 }
+
+header h1,
+.header-subtitle {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #6fff00; //#96f400;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
+               0 0 5px rgba(181, 232, 83, 0.3),
+               0 0 10px rgba(181, 232, 83, 0.3);
+  letter-spacing: -1px;
+  -webkit-font-smoothing: antialiased;
+}
+
+header h1:hover {
+  color: #6fff00;
+  // text-shadow: 0 0 5px rgba(181, 232, 83, 0.5);
+  text-shadow: 0 0 10px rgba(111, 255, 0, 0.8);
+}
+
+.header-title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 28px;
+  color: #6fff00;
+  text-shadow: 0 0 5px rgba(82, 190, 0, 0.8);
+}
+
+.header-subtitle,
+.header-subtitle-block {
+  margin: 10px -6px 0px -6px;
+  font-size: 21px;
+  color: #6fff00;
+  text-shadow: 0 0 5px rgba(82, 190, 0, 0.8);
+}
+
+.header-subtitle:hover {
+  color: #6fff00;
+  text-shadow: 0 0 5px rgba(111, 255, 0, 0.8);
+}
+
+.header-subtitle-block {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-block {
+  display: block;
+  text-align: center;
+}
+
+.header-charscolor {
+  color: #16c60c;
+}
+
+//--------------------------------------------
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  margin-bottom: 3px;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+//--------------------------------------------
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: linear-gradient(#111119, #1f1f27);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2e2e39;    /* color of the scroll thumb */
+  border-radius: 5px;       /* roundness of the scroll thumb */
+  border: 3px solid #000000;  /* creates padding around scroll thumb */
+}
+//--------------------------------------------
 
 /* Main Content
 */
@@ -106,7 +177,7 @@ section img {
 h2, h3, h4, h5, h6 {
   font-weight: normal;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  color: #96f400; //$header;
+  color: #6fff00; //$header;
   letter-spacing: -0.03em;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
                0 0 5px rgba(181, 232, 83, 0.1),
@@ -129,26 +200,26 @@ h2.post-title,
 h2.tag-head a,
 h2.category-head a,
 h3.archives-head a {
-  color: #96f400;
+  color: #6fff00;
 }
 
 h2.tag-head a:hover,
 h2.category-head a:hover,
 h3.archives-head a:hover {
-  color: #9dff00;
+  color: #6fff00;
 }
 
 h4.post-tags {
-  color: #81d100;
+  color: #51d100;
 }
 
 h4 a.tag-element {
-  color: #82d300;
+  color: #52d300;
   text-shadow: 0 0 5px rgba(200, 255, 111, 0.5);
 }
 
 h4 a.tag-element:hover {
-  color: #9dff00;
+  color: #6fff00;
   // color: #82d300;
   text-shadow: 0 0 5px rgba(200, 255, 111, 0.5);
 }
@@ -202,7 +273,7 @@ p em {
 //Item Level 1
 ul li::marker {
   content: "❯ ";
-  color: #98c83f;
+  color: #16c60c;
   font-size: 14px;
 }
 
