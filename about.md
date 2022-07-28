@@ -6,7 +6,7 @@ title: About
 
 ### Sobre mí
 
-Autor: Déleon (aka LawlietJH)
+Autor: Déleon (aka. LawlietJH)
 
 Github: [LawlietJH](https://github.com/LawlietJH){:target="_blank"}
 
