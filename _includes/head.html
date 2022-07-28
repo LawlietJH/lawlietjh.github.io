@@ -3,6 +3,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta name="generator" content="Jekyll">
   <meta http-equiv="content-language" content="es-mx">
+  
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description | truncate: 150 }}{% else %}{{ page.content | truncate: 150 }}{% endif %}">
+  <meta property="og:image" content="/assets/majoras-mask.jpg">
 
   <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 

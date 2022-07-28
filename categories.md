@@ -2,6 +2,7 @@
 layout: page
 permalink: /categories
 title: Categories
+description: Lista de Categorías.
 ---
 
 {% assign site_categories_sort = site.categories | sort %}
