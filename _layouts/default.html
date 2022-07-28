@@ -2,7 +2,11 @@
 <html>
 {% include head.html %}
 
-<body>
+{% if page.title == 404 %}
+  <body onload="dateTimeInfo()">
+{% else %}
+  <body>
+{% endif %}
   <div id="wrapper">
     {% include header.html %}
     {% if paginator.total_pages > 1 %}
@@ -100,6 +104,15 @@
   {% include footer.html %}
   {% if site.debug == false and site.google_analytics %}
     {% include analytics.html %}
+  {% endif %}
+  {% if page.title == 404 %}
+    <script>
+      function dateTimeInfo() {
+          var today = new Date().toLocaleString('es-MX', {timeZone: 'America/Mexico_City'});
+          document.getElementById('dateTimeInfo').innerHTML = today
+          setTimeout(dateTimeInfo, 1000)
+      }
+    </script>
   {% endif %}
 </body>
 

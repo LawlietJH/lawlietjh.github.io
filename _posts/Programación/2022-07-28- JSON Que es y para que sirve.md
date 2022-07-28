@@ -2,7 +2,7 @@
 title: "JSON: ¿Qué es y para qué sirve?"
 category: Programación
 tags: Información JSON
-date: 2022-07-28 21:00
+date: 2022-07-28 00:00
 published: true
 ---
 

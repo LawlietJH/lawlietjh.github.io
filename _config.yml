@@ -13,6 +13,7 @@ permalink: /:categories/:title
 paginate: 7
 paginate_path: /page/:num/
 google_analytics: "UA-235220550-1"
+timezone: America/Mexico_City
 
 defaults:
   -
