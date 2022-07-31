@@ -34,4 +34,4 @@ plugins:
 # Custom variables
 owner: "Déleon"
 year: "2022"
-debug: true
+debug: false
