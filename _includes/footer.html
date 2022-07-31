@@ -14,8 +14,8 @@
   {% if page.page_id and site.debug == false %}
     <script>
       fetch('https://deleonblogrestapi.herokuapp.com/api/visits/{{ page.page_id }}/', {method: 'PATCH'})
-      .then(response => response.json())
-      .then(json => console.log(json))
+      // .then(response => response.json())
+      // .then(json => console.log(json))
     </script>
   {% endif %}
 
