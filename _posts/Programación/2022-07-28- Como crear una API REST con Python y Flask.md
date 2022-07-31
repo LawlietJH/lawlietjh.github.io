@@ -4,6 +4,7 @@ category: Programación
 tags: Tutorial Python Flask API Web
 date: 2022-07-28 00:03
 published: true
+page_id: 23
 ---
 
 Sabemos que, en el mundo de la programación, existe una fuerte necesidad por la comunicación entre componentes de software, una excelente solución a esto fueron las [API](/web/API-Que-es-y-para-que-sirve) y [JSON](JSON-Que-es-y-para-que-sirve).

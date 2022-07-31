@@ -4,6 +4,7 @@ category: "Software Libre"
 tags: ["Software Libre", Información]
 date: 2022-07-18 21:00
 published: true
+page_id: 9
 ---
 
 La definición de **Software Libre** estipula los criterios que se tienen que cumplir para que un programa sea considerado libre.

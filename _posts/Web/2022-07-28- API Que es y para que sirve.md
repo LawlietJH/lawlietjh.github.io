@@ -4,6 +4,7 @@ category: Web
 tags: Información API Web
 date: 2022-07-28 00:01
 published: true
+page_id: 21
 ---
 
 **API** son las siglas de *Application Programming Interface* o *Interfaz de Programación de Aplicaciones* es un conjunto de subrutinas, funciones o métodos para ser utilizada por otro software como una capa de abstracción. Es la manera más simple de comunicar 2 componentes de software completamente distintos entre sí.

@@ -3,6 +3,7 @@ layout: page
 permalink: /about
 title: About
 description: "Autor: Déleon (aka. LawlietJH) Github: https://github.com/LawlietJH Hack The Box: https://app.hackthebox.com/profile/861002"
+page_id: 6
 ---
 
 ### Sobre mí

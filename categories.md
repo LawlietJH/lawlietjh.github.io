@@ -3,6 +3,7 @@ layout: page
 permalink: /categories
 title: Categories
 description: Lista de Categorías.
+page_id: 4
 ---
 
 {% assign site_categories_sort = site.categories | sort %}

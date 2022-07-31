@@ -3,6 +3,7 @@ layout: page
 permalink: /archives
 title: Archives
 description: Lista de todas las publicaciones del Blog.
+page_id: 3
 ---
 
 <section>

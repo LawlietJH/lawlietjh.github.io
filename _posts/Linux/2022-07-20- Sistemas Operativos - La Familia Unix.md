@@ -4,6 +4,7 @@ category: "Linux"
 tags: ["Linux", Información]
 date: 2022-07-20 21:05
 published: true
+page_id: 19
 ---
 
 *Windows de Microsoft* y *macOS de Apple*, son quizás los sistemas operativos más conocidos. Pero no son los únicos.

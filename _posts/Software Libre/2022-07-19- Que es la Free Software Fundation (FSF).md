@@ -4,6 +4,7 @@ category: "Software Libre"
 tags: ["Software Libre", Información]
 date: 2022-07-19 21:01
 published: true
+page_id: 11
 ---
 
 La **Fundación por el Software Libre** (**Free Software Foundation**) es una organización creada en octubre de 1985 por <a href="Quien-es-Richard-Stallman">Richard Stallman</a> y otros entusiastas del *software libre* con el propósito de difundir este movimiento.

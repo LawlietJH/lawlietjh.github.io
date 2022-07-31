@@ -4,6 +4,7 @@ category: "Software Libre"
 tags: ["Software Libre", Información]
 date: 2022-07-19 21:02
 published: true
+page_id: 12
 ---
 
 Las **licencias de software** son un contrato entre el autor de un programa informático y los usuarios del mismo. En ellas se establecen los términos, condiciones y cláusulas que se deben cumplir para poder usar ese programa y cada usuario que descarga, instala, copia o lo utiliza debe aceptar esas condiciones.

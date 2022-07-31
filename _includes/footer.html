@@ -11,12 +11,12 @@
       </a>
     </span>
   {% endif %}
-  
-  {% if page.id %}
+  {% if page.page_id and site.debug == false %}
     <script>
-      fetch('https://deleonblogrestapi.herokuapp.com/api/visits/{{ page.id }}/')
+      fetch('https://deleonblogrestapi.herokuapp.com/api/visits/{{ page.page_id }}/', {method: 'PATCH'})
       .then(response => response.json())
       .then(json => console.log(json))
     </script>
   {% endif %}
+
 </footer>

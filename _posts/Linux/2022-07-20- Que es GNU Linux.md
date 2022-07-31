@@ -4,6 +4,7 @@ category: "Linux"
 tags: ["Linux", Información]
 date: 2022-07-20 21:02
 published: true
+page_id: 16
 ---
 
 **GNU/Linux** es un *Sistema Operativo* (o una familia de sistemas operativos) tipo *Unix* compuesto por *software libre* y de *código abierto*. Este sistema surge de las contribuciones de varios proyectos de software, entre los cuales destacan <a href="/linux/Que-es-GNU">GNU</a> (iniciado por <a href="/software libre/Quien-es-Richard-Stallman">Richard Stallman</a> en 1983) y el **kernel 'Linux'** (iniciado por <a href="/linux/Quien-es-Linus-Torvalds">Linus Torvalds</a> en 1991).

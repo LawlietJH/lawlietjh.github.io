@@ -4,6 +4,7 @@ category: Shell
 tags: Información Shell
 date: 2022-07-16 21:00
 published: true
+page_id: 7
 ---
 
 <div id="Shell"></div>

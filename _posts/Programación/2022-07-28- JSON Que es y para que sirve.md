@@ -4,6 +4,7 @@ category: Programación
 tags: Información JSON
 date: 2022-07-28 00:00
 published: true
+page_id: 20
 ---
 
 **JSON** son las siglas de *JavaScript Object Notation* o *Notación de Objetos de JavaScript*, es un formato ligero de intercambio de datos muy simple de leer y escribir para los programadores y fácil de generar e interpretar por las máquinas. Este es un formato de texto completamente independiente de un lenguaje de programación, pero utiliza convenciones que son ampliamente conocidos por programadores.

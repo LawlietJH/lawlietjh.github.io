@@ -3,6 +3,7 @@ layout: page
 permalink: /tags
 title: Tags
 description: Lista de Tags.
+page_id: 5
 ---
 
 {% assign site_tags_sort = site.tags | sort %}

@@ -4,6 +4,7 @@ category: "Software Libre"
 tags: ["Software Libre", Información]
 date: 2022-07-19 21:03
 published: true
+page_id: 13
 ---
 
 Las **licencias de software libre** permiten ejecutar el programa, estudiar su funcionamiento, adaptarlo a las necesidades de cada usuario, copiarlo y redistribuirlo y, por supuesto, mejorarlo y poner esas mejoras al alcance y servicio de toda la comunidad. Entre las licencias libres existen algunas diferencias.

@@ -4,6 +4,7 @@ category: "Linux"
 tags: ["Linux", Información]
 date: 2022-07-20 21:00
 published: true
+page_id: 14
 ---
 
 Unix es un **Sistema Operativo** que nace a principios de los años 70, creado principalmente por **Dennis Ritchie** y **Ken Thompson**. Sus características técnicas principales son: su portabilidad, su capacidad multiusuario y multitarea, su eficiencia; su alta seguridad y su buen desempeño en tareas de red. Pero *Unix*, más que una marca, también es una filosofía que tiene por principios el minimalismo y la modularidad: hacer programas que hagan una sola cosa bien hecha y que, al comunicarse entre sí, ejecuten tareas más complejas.

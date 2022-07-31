@@ -4,6 +4,7 @@ category: Web
 tags: Información HTTP Web
 date: 2022-07-28 00:02
 published: true
+page_id: 22
 ---
 
 **HTTP** define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados *HTTP verbs*.

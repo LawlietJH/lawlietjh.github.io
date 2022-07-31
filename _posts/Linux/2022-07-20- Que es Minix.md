@@ -4,6 +4,7 @@ category: "Linux"
 tags: ["Linux", Información]
 date: 2022-07-20 21:03
 published: true
+page_id: 17
 ---
 
 **MINIX** es un *Clon del Sistema Operativo* <a href="Que-es-Unix">Unix</a> distribuido junto con su código fuente y desarrollado por el profesor **Andrew S. Tanenbaum** en 1987.

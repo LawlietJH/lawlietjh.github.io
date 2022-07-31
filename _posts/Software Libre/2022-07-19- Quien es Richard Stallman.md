@@ -4,6 +4,7 @@ category: "Software Libre"
 tags: ["Software Libre", Información]
 date: 2022-07-19 21:00
 published: true
+page_id: 10
 ---
 
 *"La libertad no es poder elegir entre unas pocas opciones impuestas, sino tener el control de tu propia vida. La libertad no es elegir quién será tu amo, es no tener amo."*<br>
