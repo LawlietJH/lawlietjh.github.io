@@ -20,6 +20,7 @@ jobs:
         jekyll/builder:latest /bin/bash -c \
         "chmod -R 777 /srv/jekyll \
         && gem install jekyll-environment-variables \
+        && echo ${{ secrets.REST_API_TOKEN }} \
         && jekyll build --future"
       env:
         REST_API_TOKEN: xD
