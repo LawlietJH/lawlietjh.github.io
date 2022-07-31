@@ -28,8 +28,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-environment-variables
+
 
 # Custom variables
 owner: "Déleon"
 year: "2022"
-debug: false
+debug: true
