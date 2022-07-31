@@ -13,6 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+      with:
+        REST_API_TOKEN: ${{ secrets.REST_API_TOKEN }}
+      env:
+        REST_API_TOKEN: ${{ secrets.REST_API_TOKEN }}
     - name: Build the site in the jekyll/builder container
       run: |
         docker run \
@@ -22,5 +26,3 @@ jobs:
         && gem install jekyll-environment-variables \
         && echo ${{ secrets.REST_API_TOKEN }} \
         && jekyll build --future"
-      env:
-        REST_API_TOKEN: xD
