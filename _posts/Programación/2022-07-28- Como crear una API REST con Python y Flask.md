@@ -599,8 +599,8 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-Este es un CRUD funcional en una API REST con Python y Flask.
+Este es un **CRUD** funcional en una **API REST** con **Python** y **Flask**.
 
-Hoy en día es indispensable conocer como funcionan y se implementan las API REST para la consulta de datos, es tan común utilizarlas, que entender como funcionan siempre será necesario.
+Hoy en día es indispensable conocer como funcionan y se implementan las **API REST** para la consulta de datos, es tan común utilizarlas, que entender como funcionan siempre será necesario.
 
 Espero que les haya gustado esta publicación. !Hasta la próxima!
