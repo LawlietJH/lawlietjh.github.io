@@ -28,7 +28,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-environment-variables
 
 
 # Custom variables

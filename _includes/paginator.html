@@ -2,14 +2,24 @@
   <div class="pagination">
     {% if paginator.previous_page == 1 %}
       <span>
-        <a class="pagination-change-mark" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">&nbsp;&laquo;</a>
-        <a class="pagination-change-mark" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">&lsaquo;&nbsp;</a>
+        <a class="pagination-change-mark" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">
+          &nbsp;&laquo;
+        </a>
+        <a class="pagination-change-mark" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">
+          &lsaquo;&nbsp;
+        </a>
       </span>
     {% elsif paginator.previous_page%}
-      <a class="pagination-change-mark" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">&nbsp;&laquo;</a>
-      <a class="pagination-change-mark" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&lsaquo;&nbsp;</a>
+      <a class="pagination-change-mark" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">
+        &nbsp;&laquo;
+      </a>
+      <a class="pagination-change-mark" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        &lsaquo;&nbsp;
+      </a>
     {% else %}
-      <span class="pagination-change-mark">&nbsp;&laquo;&nbsp;&lsaquo;&nbsp;</span>
+      <span class="pagination-change-mark">
+        &nbsp;&laquo;&nbsp;&lsaquo;&nbsp;
+      </span>
     {% endif %}
     {% assign page_minus = paginator.page | minus: 5 %}
     {% if page_minus < 1 %}
@@ -27,17 +37,27 @@
       {% if page == paginator.page %}
         <span>{{ page }}</span>
       {% elsif page == 1 %}
-        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">
+          {{ page }}
+        </a>
       {% else %}
-        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">
+          {{ page }}
+        </a>
       {% endif %}
     {% endfor %}
     {% if paginator.next_page %}
-    {% assign paginator_last_page_path = site.paginate_path | replace: ':num', paginator.total_pages %}
-      <a class="pagination-change-mark" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&nbsp;&rsaquo;</a>
-      <a class="pagination-change-mark" href="{{ paginator_last_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;&nbsp;</a>
+      {% assign paginator_last_page_path = site.paginate_path | replace: ':num', paginator.total_pages %}
+      <a class="pagination-change-mark" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        &nbsp;&rsaquo;
+      </a>
+      <a class="pagination-change-mark" href="{{ paginator_last_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+        &raquo;&nbsp;
+      </a>
     {% else %}
-      <span class="pagination-change-mark">&nbsp;&rsaquo;&nbsp;&raquo;&nbsp;</span>
+      <span class="pagination-change-mark">
+        &nbsp;&rsaquo;&nbsp;&raquo;&nbsp;
+      </span>
     {% endif %}
   </div>
 {% endif %}

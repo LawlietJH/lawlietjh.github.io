@@ -8,7 +8,6 @@ page_id: 3
 
 <section>
   {% if site.posts[0] %}
-
     {% capture currentyear %}
       {{ 'now' | date: "%Y" }}
     {% endcapture %}
@@ -30,7 +29,6 @@ page_id: 3
           </a>
         </h3>
     {% endif %}
-
     {% assign site_time = site.time | date: '%s' | plus: 0 %}
     {%for post in site.posts %}
       {% unless post.next %}
@@ -55,14 +53,14 @@ page_id: 3
       {% endunless %}
       {% assign post_date = post.date | date: '%s' | plus: 0 %}
       {% if site_time >= post_date or site.debug == true %}
-        <li><time>{{ post.date | date:"%d %b" }} - </time>
-          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+        <li class="archives-link-mark">
+          <time>{{ post.date | date:"%d %b" }} - </time>
+          <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}" class="archives-link-capsule">
             {{ post.title }}
           </a>
         </li>
       {% endif %}
     {% endfor %}
     </ul>
-
   {% endif %}
 </section>

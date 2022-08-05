@@ -15,7 +15,9 @@
           root<span class="header-charscolor">@</span>{{ owner_first_name[0] }}<span class="header-charscolor">:~</span>{{base_url}}<span class="header-charscolor">#</span>
           whoami
         </dev>
-        <dev class="header-subtitle-block header-charscolor blink">|</dev>
+        <dev class="header-subtitle-block header-charscolor blink">
+          |
+        </dev>
       </a>
     {% else %}
       <h2 class="header-subtitle">
@@ -23,8 +25,12 @@
       </h2>
     {% endif %}
     <a class="header-block" href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
-      <span class="header-title header-charscolor">❯</span>
-      <h1 class="header-title">{{site.title}}</h1>
+      <h1 class="header-title header-typer-wrapper">
+        <span class="header-typer">
+          <span class="header-title header-charscolor">❯</span>
+          {{site.title}}
+        </span>
+      </h1>
     </a>
     <div class="header-links">
       {% include links.html %}
