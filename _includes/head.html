@@ -1,26 +1,33 @@
 <head>
-  <meta charset="UTF-8" />
+  
+  <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta name="generator" content="Jekyll">
   <meta name="description" content="Blog de Informática y Ciberseguridad">
   <meta http-equiv="content-language" content="es-mx">
 
-  <meta property="og:type" content="article" />
   <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:type" content="{% if page.title == 'Déleon Blog' %}website{% else %}article{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 150 }}{% else %}{{ page.content | strip_html | truncate: 150 }}{% endif %}">
   <meta property="og:url" content="{{ site.url | append: page.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:image" content="/assets/majoras-mask-large.jpg">
+  <meta property="og:image" content="{{ site.url }}/assets/majoras-mask-large.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="628">
   <meta property="article:author" content="{{ site.owner }}">
+  {% if page.category %}<meta property="article:section" content="{{ page.category }}">{% else %}{% if page.page_id == 2 %}<meta property="article:section" content="Home">{% else %}<meta property="article:section" content="{{ page.title }}">{% endif %}{% endif %}
+  {% if page.tags %}<meta property="article:tag" content="{% for tag in page.tags %}{{ tag }}{% if forloop.last != true %},{% endif %}{% endfor %}">{% else %}{% if page.page_id == 2 %}<meta property="article:tag" content="Index,Home,Main,Menu">{% else %}<meta property="article:tag" content="{{ page.title }}">{% endif %}{% endif %}
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | truncate: 150 }}{% else %}{{ page.content | strip_html | truncate: 150 }}{% endif %}">
+  <meta itemprop="image" content="{{ site.url }}/assets/majoras-mask-large.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 150 }}{% else %}{{ page.content | strip_html | truncate: 150 }}{% endif %}">
-  <meta name="twitter:image" content="/assets/majoras-mask-large.jpg">
+  <meta name="twitter:creator" content="@EnyLawliet">
+  <meta name="twitter:image" content="{{ site.url }}/assets/majoras-mask-large.jpg">
   
-  <title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-
   <link rel="shortcut icon" href="/assets/Deleon.ico">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
