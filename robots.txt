@@ -1,2 +1,5 @@
 User-agent: *
 Disallow: /contact.html
+
+User-agent: Twitterbot
+Disallow:
