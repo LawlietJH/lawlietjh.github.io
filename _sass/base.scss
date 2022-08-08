@@ -145,7 +145,7 @@ header h1:hover {
   width: 17px*13;
   white-space: nowrap;
   overflow: hidden;
-  animation: typing .5s steps(20)
+  animation: typing 1s steps(40)
 }
 
 @keyframes typing { from { width: 0 } }
@@ -297,22 +297,6 @@ h4 a.tag-element:hover {
   border: 1px solid #000000;
   border-radius: 15px;
   padding: 0px 5px 0px 5px;
-}
-
-//--------------------------------------------
-
-.footer-github-mark::before {
-  font-family: FontAwesome;
-  font-size: 50px;
-  background-color: #000000;
-  border-radius: 50%;
-  color: #ffffff;
-  content: "\f09b";
-}
-
-.footer-hackthebox-mark {
-  width: 42px;
-  height: 42px;
 }
 
 //--------------------------------------------
@@ -522,7 +506,22 @@ a:active, a:focus {
   zoom:1;
 }
 
+//-------------------------------------------------
 /* Make footer stick to bottom */
+
+.footer-github-mark::before {
+  font-family: FontAwesome;
+  font-size: 55px;
+  background-color: #000000;
+  border-radius: 50%;
+  color: #ffffff;
+  content: "\f09b";
+}
+
+.footer-hackthebox-mark {
+  width: 42px;
+  height: 42px;
+}
 
 .pagination-change-mark {
   font-size: 26px;
@@ -533,10 +532,16 @@ a:active, a:focus {
 }
 
 .pagination, footer {
-  // height: 100px;
   font-size: 18px;
-  line-height: 100px;
   text-align: center;
+}
+
+.pagination {
+  line-height: 80px;
+}
+
+footer {
+  line-height: 50px;
 }
 
 footer a {
@@ -548,6 +553,16 @@ footer a:hover {
   color: #6fff00;
   text-shadow: 0 0 10px rgba(203, 255, 163, 0.9);
 }
+
+footer .social {
+  margin-top: 20px;
+}
+
+footer .copyright {
+  font-size: small;
+}
+
+//-------------------------------------------------
 
 #wrapper {
   min-height: calc(100vh - 100px);

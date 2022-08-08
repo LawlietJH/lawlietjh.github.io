@@ -1,10 +1,13 @@
 <footer>
   {%if page.page_id != 2 %}
+  <div>
     <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}"
     class="footer-link-capsule">
       Página Principal
     </a>
-  {% else %}
+  </div>
+  {% endif %}
+  <div class="social">
     <span>
       <a href="https://github.com/LawlietJH" target="_blank"
       class="footer-github-mark"></a>
@@ -33,7 +36,10 @@
         </svg>
       </a>
     </span>
-  {% endif %}
+  </div>
+  <div class="copyright">
+    <span>© 2022 Déleon Blog</span>
+  </div>
   {% if page.page_id and site.debug == false %}
     <script>
       fetch('https://deleonblogrestapi.herokuapp.com/api/visits/{{ page.page_id }}/', {method: 'PATCH'})

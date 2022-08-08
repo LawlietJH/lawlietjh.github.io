@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <meta name="generator" content="Jekyll">
   <meta name="description" content="Blog de Informática y Ciberseguridad">
-  <meta http-equiv="content-language" content="es-mx">
-
+  <meta http-equiv="content-language" content="es-MX">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:type" content="{% if page.title == 'Déleon Blog' %}website{% else %}article{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 150 }}{% else %}{{ page.content | strip_html | truncate: 150 }}{% endif %}">
@@ -26,8 +27,9 @@
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 150 }}{% else %}{{ page.content | strip_html | truncate: 150 }}{% endif %}">
   <meta name="twitter:creator" content="@EnyLawliet">
-  <meta name="twitter:image" content="{{ site.url }}/assets/majoras-mask-large.jpg">
-  
+  <meta name="twitter:image:src" content="{{ site.url }}/assets/majoras-mask-large.jpg">
+  <meta name="copyright" content="© 2022 Déleon Blog">
+
   <link rel="shortcut icon" href="/assets/Deleon.ico">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
