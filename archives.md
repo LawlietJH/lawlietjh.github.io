@@ -8,13 +8,13 @@ page_id: 3
 
 <section>
   {% if site.posts[0] %}
-    {% capture currentyear %}
-      {{ 'now' | date: "%Y" }}
+    {% capture current_month %}
+      {{ 'now' | date: "%Y %B" }}
     {% endcapture %}
-    {% capture firstpostyear %}
-      {{ site.posts[0].date | date: '%Y' }}
+    {% capture first_post_month %}
+      {{ site.posts[0].date | date: '%Y %B' }}
     {% endcapture %}
-    {% if currentyear == firstpostyear %}
+    {% if current_month == first_post_month %}
         <div id="Recientes"></div>
         <h3 class="archives-head">
           <a href="#Recientes">
@@ -22,10 +22,10 @@ page_id: 3
           </a>
         </h3>
     {% else %}
-        <div id="{{ firstpostyear }}"></div>
+        <div id="{{ site.posts[0].date | date: '%Y-%B' }}"></div>
         <h3 class="archives-head">
-          <a href="#{{ firstpostyear }}">
-            {{ firstpostyear }}
+          <a href="#{{ site.posts[0].date | date: '%Y-%B' }}">
+            {{ first_post_month }}
           </a>
         </h3>
     {% endif %}
@@ -35,17 +35,17 @@ page_id: 3
         <ul>
       {% else %}
         {% capture year %}
-          {{ post.date | date: '%Y' }}
+          {{ post.date | date: '%Y %B' }}
         {% endcapture %}
         {% capture nyear %}
-          {{ post.next.date | date: '%Y' }}
+          {{ post.next.date | date: '%Y %B' }}
         {% endcapture %}
         {% if year != nyear %}
           </ul>
-          <div id="{{ post.date | date: '%Y' }}"></div>
+          <div id="{{ post.date | date: '%Y-%B' }}"></div>
           <h3 class="archives-head">
-            <a href="#{{ post.date | date: '%Y' }}">
-              {{ post.date | date: '%Y' }}
+            <a href="#{{ post.date | date: '%Y-%B' }}">
+              {{ post.date | date: '%Y %B' }}
             </a>
           </h3>
           <ul>
