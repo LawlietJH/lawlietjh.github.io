@@ -340,11 +340,11 @@ ul li p {
 }
 
 p strong {
-  color: #aaffff;
+  color: #85f0f0;
 }
 
 p em {
-  color: #aaffff;
+  color: #85f0f0;
 }
 
 .tabs-textcolor {
@@ -411,6 +411,25 @@ code.highlighter-rouge {
 table {
   width: 100%;
   margin: 0 0 20px 0;
+}
+
+table.dark,
+table.dark th,
+table.dark td {
+  border-spacing: 1px;
+  border: 1px solid #005c68;
+  margin: 15px 0 15px 0;
+  padding: 0%;
+  color: #00abc2;
+  text-align: center;
+  font-weight: bold;
+}
+
+table.dark tr.dark-title th,
+table.dark tr.dark-title td,
+table.dark th.dark-title,
+table.dark td.dark-title {
+  color: #26ada2;
 }
 
 th {
