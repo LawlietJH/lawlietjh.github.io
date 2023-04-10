@@ -10,7 +10,7 @@ page_id: 24
 <div id="Base64"></div>
 ## ¿Qué es la Codificación en Base64?
 
-El cifrado en **Base64** es un sistema de numeración posicional que usa 64 como base. Es la mayor potencia que puede ser representada usando únicamente los caracteres imprimibles de **ASCII**. Podemos ver a *Base64* como un grupo de esquemas de codificación de binario a texto que representa los datos binarios mediante una cadena *ASCII*.
+La codificación en **Base64** es un sistema de numeración posicional que usa 64 como base. Es la mayor potencia que puede ser representada usando únicamente los caracteres imprimibles de **ASCII**. Podemos ver a *Base64* como un grupo de esquemas de codificación de binario a texto que representa los datos binarios mediante una cadena *ASCII*.
 
 Todas las variantes famosas que se conocen con el nombre de *Base64* usan el rango de caracteres **A-Z**, **a-z** y **0-9** en este orden para los primeros 62 dígitos, pero los símbolos escogidos para los últimos dos dígitos varían considerablemente de unas a otras, normalmente, siendo los símbolos *'='* y *'+'* como símbolos extras.
 
