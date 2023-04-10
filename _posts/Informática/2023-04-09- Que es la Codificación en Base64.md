@@ -71,10 +71,10 @@ Por tanto, 3 bytes sin codificar (en este caso, caracteres ASCII) entran y 4 car
 <table class="dark">
     <thead>
         <tr class="dark-title">
-            <th>Valor</th><th>Carácter</th>
-            <th>Valor</th><th>Carácter</th>
-            <th>Valor</th><th>Carácter</th>
-            <th>Valor</th><th>Carácter</th>
+            <th>Value</th><th>Char</th>
+            <th>Value</th><th>Char</th>
+            <th>Value</th><th>Char</th>
+            <th>Value</th><th>Char</th>
         </tr>
     </thead>
     <tbody>
