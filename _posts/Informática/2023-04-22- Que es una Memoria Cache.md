@@ -7,10 +7,6 @@ published: true
 page_id: 26
 ---
 
-{% for post in site.posts %}
-<!-- {{ post.page_id }} - {{ post.url }} -->
-{% endfor %}
-
 La **memoria caché** es un **búfer** especial de memoria que poseen las computadoras, que funciona de manera semejante a la memoria principal, pero es de menor tamaño y de acceso más rápido. Nace cuando las memorias ya no eran capaces de acompañar a la velocidad del procesador, por lo que se puede decir que es una memoria auxiliar, que posee una gran velocidad y eficiencia y es usada por el microprocesador para reducir el tiempo de acceso a datos ubicados en la memoria principal que se utilizan con más frecuencia.
 
 La caché es una memoria que se sitúa entre la **unidad central de procesamiento** (**CPU**) y la **memoria de acceso aleatorio** (**RAM**) para acelerar el intercambio de datos.
