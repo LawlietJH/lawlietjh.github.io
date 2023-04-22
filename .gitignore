@@ -7,3 +7,4 @@ _site
 # Otros:
 _posts/**/*.txt
 _posts/Xyzzy/
+_drafts/
