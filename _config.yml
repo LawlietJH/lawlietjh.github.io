@@ -5,8 +5,6 @@ author:
   email: ""
   url: "https://github.com/LawlietJH"
 
-baseurl: /
-
 source: .
 destination: ./_site/
 permalink: /:categories/:title
