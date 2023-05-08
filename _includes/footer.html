@@ -1,6 +1,28 @@
 <footer>
-  {%if page.page_id != 2 %}
+  {% if page.page_id != 2 %}
   <div>
+    {% if page.page_id >= 7 %}
+      {% assign diff = site.posts.first.page_id | minus: 7 %}
+      {% assign random_page_id = "now" | date: "%N" | modulo: diff | plus: 7 %}
+      {% assign before_page_id = page.page_id | minus: 1 %}
+      {% assign after_page_id = page.page_id | plus: 1 %}
+      {% assign random_post = site.posts | where:"page_id", random_page_id | first %}
+      {% assign before_post = site.posts | where:"page_id", before_page_id | first %}
+      {% assign after_post = site.posts | where:"page_id", after_page_id | first %}
+      <div>
+        <br>
+        {% if before_post %}
+          <a href="{{ before_post.url }}"><span class="change-page"><<< Anterior |</span> {{ before_post.title }}</a><br>
+        {% endif %}
+        {% if after_post %}
+          <a href="{{ after_post.url }}">{{ after_post.title }} <span class="change-page">| Siguiente >>></span></a><br>
+        {% endif %}
+        {% if random_post and (random_post.page_id < before_post.page_id or random_post.page_id > after_post.page_id) %}
+          <a href="{{ random_post.url }}"><span class="change-page">Recomendado: </span> {{ random_post.title }}</a><br>
+        {% endif %}
+        <br>
+      </div>
+    {% endif %}
     <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}"
     class="footer-link-capsule">
       Página Principal
