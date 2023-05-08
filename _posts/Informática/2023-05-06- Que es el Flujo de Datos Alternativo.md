@@ -33,7 +33,7 @@ El *ADS* creado no aumentará el peso ni alterara el archivo original, estos **f
 
 Esto solo funciona en una unidad con formato **NTFS**. Tiene sus limitaciones, es importante resaltar que estas capas ocultas de texto no son posibles de compartir al sacar el archivo del disco duro. Estas capas no son más que flujos de datos que apuntan al mismo archivo.
 
-<img class="general-img" src="/assets/images/28/alternate_data_streams_ADS.png" width="360" align="right">
+<img class="general-img" src="/assets/images/28/alternate_data_streams_ADS.png" width="300" align="right">
 Desde Windows 2000, el sistema de archivos **NTFS** en Windows ha admitido **flujos de datos alternativos**, que le permiten almacenar datos *"detrás"* de un nombre de archivo con el uso de un nombre de flujo. No es detectable mientras se navega por el sistema de archivos, o en cualquier lugar dentro de Windows, solo se puede acceder a él con la **"clave secreta"**, que en realidad es solo el nombre de la transmisión.
 
 Puedes pensar en estas secuencias adicionales como compartimientos secretos o capas dentro del archivo al que solo se puede acceder si se conoce el **"código secreto"**, que en este caso es solo el nombre de la secuencia. Esta no es una forma completamente segura de ocultar datos, como ilustraremos más adelante, pero es un truco divertido para conocer.
