@@ -8,7 +8,7 @@ page_id: 5
 
 {% assign site_tags_sort = site.tags | sort %}
 <p class="tabs-textcolor">Tags:</p>
-<ul class="tag-column-list">
+<ul class="tag-column-list-3">
   {% for tag in site_tags_sort %}
     <li class="tags-link-mark">
       <a href="#{{tag | first }}" class="tags-link-capsule">

@@ -8,7 +8,7 @@ page_id: 4
 
 {% assign site_categories_sort = site.categories | sort %}
 <p class="tabs-textcolor">Categorías:</p>
-<ul>
+<ul class="tag-column-list-2">
   {% for category in site_categories_sort %}
     <li class="categories-link-mark">
       <a href="#{{category | first }}" class="categories-link-capsule">

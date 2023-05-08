@@ -248,8 +248,12 @@ h4 a.tag-element:hover {
   content: "\f02b";
 }
 
-article ul.tag-column-list {
+article ul.tag-column-list-3 {
   column-count: 3;
+}
+
+article ul.tag-column-list-2 {
+  column-count: 2;
 }
 
 //--------------------------------------------
