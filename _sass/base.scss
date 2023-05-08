@@ -248,6 +248,10 @@ h4 a.tag-element:hover {
   content: "\f02b";
 }
 
+article ul.tag-column-list {
+  column-count: 3;
+}
+
 //--------------------------------------------
 
 .archives-link-mark::marker {
