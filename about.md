@@ -28,4 +28,4 @@ page_id: 6
 
 <br>
 
-![HTB](../assets/DeleonHTB.png)
+![HTB](../assets/images/DeleonHTB.png)

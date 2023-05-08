@@ -14,7 +14,7 @@
   <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 150 }}{% else %}{{ page.content | strip_html | truncate: 150 }}{% endif %}">
   <meta property="og:url" content="{{ site.url | append: page.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:image" content="{{ site.url }}/assets/majoras-mask-large.jpg">
+  <meta property="og:image" content="{{ site.url }}/assets/images/majoras-mask-large.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="628">
   <meta property="article:author" content="{{ site.owner }}">
@@ -22,15 +22,15 @@
   {% if page.tags %}<meta property="article:tag" content="{% for tag in page.tags %}{{ tag }}{% if forloop.last != true %},{% endif %}{% endfor %}">{% else %}{% if page.page_id == 2 %}<meta property="article:tag" content="Index,Home,Main,Menu">{% else %}<meta property="article:tag" content="{{ page.title }}">{% endif %}{% endif %}
   <meta itemprop="name" content="{{ page.title }}">
   <meta itemprop="description" content="{% if page.description %}{{ page.description | strip_html | truncate: 150 }}{% else %}{{ page.content | strip_html | truncate: 150 }}{% endif %}">
-  <meta itemprop="image" content="{{ site.url }}/assets/majoras-mask-large.jpg">
+  <meta itemprop="image" content="{{ site.url }}/assets/images/majoras-mask-large.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | truncate: 150 }}{% else %}{{ page.content | strip_html | truncate: 150 }}{% endif %}">
   <meta name="twitter:creator" content="@EnyLawliet">
-  <meta name="twitter:image:src" content="{{ site.url }}/assets/majoras-mask-large.jpg">
+  <meta name="twitter:image:src" content="{{ site.url }}/assets/images/majoras-mask-large.jpg">
   <meta name="copyright" content="© 2022 Déleon Blog">
 
-  <link rel="shortcut icon" href="/assets/Deleon.ico">
+  <link rel="shortcut icon" href="/assets/images/Deleon.ico">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | replace: '//', '/' }}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
