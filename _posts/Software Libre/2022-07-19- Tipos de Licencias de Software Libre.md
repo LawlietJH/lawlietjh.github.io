@@ -7,6 +7,12 @@ published: true
 page_id: 13
 ---
 
+{% assign _014 = site.posts | where: "page_id", 14 | first %}
+{% assign _016 = site.posts | where: "page_id", 16 | first %}
+
+{% assign _014_unix      = _014.url %}
+{% assign _016_gnu_linux = _016.url %}
+
 Las **licencias de software libre** permiten ejecutar el programa, estudiar su funcionamiento, adaptarlo a las necesidades de cada usuario, copiarlo y redistribuirlo y, por supuesto, mejorarlo y poner esas mejoras al alcance y servicio de toda la comunidad. Entre las licencias libres existen algunas diferencias.
 
 <br>
@@ -75,7 +81,7 @@ Una de las licencias más conocidas y utilizadas, llamada también de *fuentes a
 
 ### Licencia de Software de x.org (X Windows System)
 
-Distribuida por el *Consorcio X* (es la organización que controla su desarrollo), es usada en los sistemas operativos Linux y UNIX nacidos como alternativa a la oligarquía de los sistemas gráficos como Microsoft. Es también software libre, aunque sin adherirse al copyleft.
+Distribuida por el *Consorcio X* (es la organización que controla su desarrollo), es usada en los sistemas operativos <a href="{{_016_gnu_linux}}">Linux</a> y <a href="{{_014_unix}}">UNIX</a> nacidos como alternativa a la oligarquía de los sistemas gráficos como Microsoft. Es también software libre, aunque sin adherirse al copyleft.
 
 <div id="Freeware"><br></div>
 

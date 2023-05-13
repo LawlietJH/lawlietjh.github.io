@@ -7,6 +7,10 @@ published: true
 page_id: 27
 ---
 
+{% assign _014 = site.posts | where: "page_id", 14 | first %}
+
+{% assign _014_unix      = _014.url %}
+
 <img class="img-glider" src="/assets/images/27/glider.png" align="right">
 
 El **emblema hacker** fue propuesto primero en *octubre de 2003* por **Eric S. Raymond**, alegando la necesidad de una unificación y un símbolo reconocible para la percepción de la **cultura hacker**. Este emblema fue tomado a partir de un **_Glider_**.
@@ -23,6 +27,6 @@ El término **Glider** (del inglés, **planeador**), proviene de una formación 
 
 Los *planeadores* son importantes para el juego de la vida porque son producidas con facilidad, pueden ser colisionado entre sí para formar objetos más complejos, y puede utilizarse para transmitir información a largas distancias.
 
-**Eric S. Raymond** ha propuesto al planeador como un emblema para representar a los hackers porque: **El planeador** (**Glider**) _"nació casi al mismo tiempo que el Internet y Unix"_.
+**Eric S. Raymond** ha propuesto al planeador como un emblema para representar a los hackers porque: **El planeador** (**Glider**) _"nació casi al mismo tiempo que el Internet y <a href="{{_014_unix}}">Unix</a>"_.
 
 El **Juego de la vida** hace un llamamiento a los **hackers**.
