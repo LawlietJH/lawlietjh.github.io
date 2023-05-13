@@ -7,16 +7,17 @@ published: true
 page_id: 24
 ---
 
-{% for post in site.posts %}
-    {% if post.page_id == 10 %}{% assign id_10_richard_stallman = post.url %}{% endif %}
-    {% if post.page_id == 11 %}{% assign id_11_software_fundation = post.url %}{% endif %}
-{% endfor %}
+{% assign _010 = site.posts | where: "page_id", 10 | first %}
+{% assign _011 = site.posts | where: "page_id", 11 | first %}
+
+{% assign _010_richard_stallman   = _010.url %}
+{% assign _011_software_fundation = _011.url %}
 
 La codificación en **Base64** es un sistema de numeración posicional que usa 64 como base. Es la mayor potencia que puede ser representada usando únicamente los caracteres imprimibles de **ASCII**. Podemos ver a *Base64* como un grupo de esquemas de codificación de binario a texto que representa los datos binarios mediante una cadena *ASCII*.
 
 Todas las variantes famosas que se conocen con el nombre de *Base64* usan el rango de caracteres **A-Z**, **a-z** y **0-9** en este orden para los primeros 62 dígitos, pero los símbolos escogidos para los últimos dos dígitos varían considerablemente de unas a otras, normalmente, siendo los símbolos *'='* y *'+'* como símbolos extras.
 
-Para fines prácticos veremos un ejemplo con el título del libro de <a href="{{ id_10_richard_stallman }}">Richard Matthew Stallman</a> Fundador del <a href="{{ id_11_software_fundation }}">Movimiento del Software Libre</a>: *'Free as in Freedom: Richard Stallman's Crusade for Free Software'*
+Para fines prácticos veremos un ejemplo con el título del libro de <a href="{{_010_richard_stallman.url}}">Richard Matthew Stallman</a> Fundador del <a href="{{_011_software_fundation.url}}">Movimiento del Software Libre</a>: *'Free as in Freedom: Richard Stallman's Crusade for Free Software'*
 
 Tomando las palabras **“Free as in Freedom”** quedaría codificado en Base64 como:
 

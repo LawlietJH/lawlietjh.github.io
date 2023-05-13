@@ -7,10 +7,18 @@ published: true
 page_id: 8
 ---
 
+{% assign _014 = site.posts | where: "page_id", 14 | first %}
+{% assign _015 = site.posts | where: "page_id", 15 | first %}
+{% assign _016 = site.posts | where: "page_id", 16 | first %}
+
+{% assign _014_unix      = _014.url %}
+{% assign _015_gnu       = _015.url %}
+{% assign _016_gnu_linux = _016.url %}
+
 <div id="Thompson"><br></div>
 ### La Primera Shell
 
-El **Thompson shell** es el primer *shell de* <a href="/linux/Que-es-Unix">Unix</a> (*sh*), introducido en la primera versión de *Unix* en 1971, y fue escrito por **Ken Thompson**. Era un simple intérprete de comandos, no diseñado para secuencias de comandos, pero, sin embargo, introdujo varias funciones innovadoras. Presenta las características de la interfaz de línea de comandos y condujo al desarrollo de las *Shell* de *Unix* posteriores.
+El **Thompson shell** es el primer *shell de* <a href="{{_014_unix}}">Unix</a> (*sh*), introducido en la primera versión de *Unix* en 1971, y fue escrito por **Ken Thompson**. Era un simple intérprete de comandos, no diseñado para secuencias de comandos, pero, sin embargo, introdujo varias funciones innovadoras. Presenta las características de la interfaz de línea de comandos y condujo al desarrollo de las *Shell* de *Unix* posteriores.
 
 <div id="Bourne"><br></div>
 ### El Remplazo de la Thompson Shell: Bourne Shell
@@ -31,7 +39,7 @@ La principal ventaja de *ksh* sobre otros intérpretes de comandos tradicionales
 <div id="Bash"><br></div>
 ### Bash: La Shell del Software Libre
 
-**GNU Bash** o simplemente **Bash** (*Bourne-again shell*) es una popular interfaz de usuario de línea de comandos, específicamente un *Shell* de *Unix*; así como un *lenguaje de Scripting*. Fue originalmente escrito por *Brian Fox* para el sistema operativo <a href="/linux/Que-es-GNU">GNU</a>, y pretendía ser el reemplazo de *software libre* del *Bourne Shell*. Lanzado por primera vez en *1989*, se ha utilizado ampliamente como el intérprete de inicio de sesión (login) predeterminado para la mayoría de las distribuciones de <a href="/linux/Que-es-GNU-Linux">GNU/Linux</a>, y también de *Mac OS X* de Apple hasta la versión 10.15. Una versión también está disponible para Windows 10 y Android. También es el intérprete de órdenes de usuario predeterminado en Solaris 11.
+**GNU Bash** o simplemente **Bash** (*Bourne-again shell*) es una popular interfaz de usuario de línea de comandos, específicamente un *Shell* de *Unix*; así como un *lenguaje de Scripting*. Fue originalmente escrito por *Brian Fox* para el sistema operativo <a href="{{_015_gnu}}">GNU</a>, y pretendía ser el reemplazo de *software libre* del *Bourne Shell*. Lanzado por primera vez en *1989*, se ha utilizado ampliamente como el intérprete de inicio de sesión (login) predeterminado para la mayoría de las distribuciones de <a href="{{_016_gnu_linux}}">GNU/Linux</a>, y también de *Mac OS X* de Apple hasta la versión 10.15. Una versión también está disponible para Windows 10 y Android. También es el intérprete de órdenes de usuario predeterminado en Solaris 11.
 
 Bash es un intérprete de órdenes que generalmente se ejecuta en una ventana de texto donde el usuario escribe órdenes en modo texto. Bash también puede leer y ejecutar órdenes desde un archivo, llamado guion o "script". Al igual que todos los intérpretes de Unix, es compatible con el agrupamiento de nombres de archivo (coincidencia de comodines), tuberías, sustitución de comandos, variables y estructuras de control para pruebas de condición e iteración. Las palabras reservadas, la sintaxis, las variables de ámbito dinámico y otras características básicas del lenguaje se copian de *sh*. Otras características, por ejemplo, el historial, se copian de *csh* y *ksh*. Es un intérprete de órdenes compatible con *POSIX*, pero con varias extensiones.
 
@@ -42,7 +50,7 @@ Un agujero de seguridad en Bash que data de la *versión 1.03* (agosto de 1989),
 <div id="Zsh"><br></div>
 ### Z Shell: Una Bash Mejorada
 
-**Z shell** (o simplemente *zsh*) es un potente intérprete de comandos para sistemas operativos de tipo *Unix*, como por ejemplo los *BSD* o <a href="/linux/Que-es-GNU-Linux">GNU/Linux</a>. La primera versión fue escrita por *Paul Falstad* en *1990*, cuando era estudiante en la *Universidad de Princeton*.
+**Z shell** (o simplemente *zsh*) es un potente intérprete de comandos para sistemas operativos de tipo *Unix*, como por ejemplo los *BSD* o <a href="{{_016_gnu_linux}}">GNU/Linux</a>. La primera versión fue escrita por *Paul Falstad* en *1990*, cuando era estudiante en la *Universidad de Princeton*.
 
 Esta se diseñó para poder usarse interactivamente. Se le han incorporado muchas de las características principales de otras *Shells* de *Unix* como *Bash*, *ksh*, o *tcsh* y además posee características propias originales.
 *macOS Catalina*, lanzada en *octubre de 2019*, adoptó a *Zsh* como la *Shell* predeterminada, remplazando a *Bash*.

@@ -7,13 +7,21 @@ published: true
 page_id: 11
 ---
 
-La **Fundación por el Software Libre** (**Free Software Foundation**) es una organización creada en octubre de 1985 por <a href="Quien-es-Richard-Stallman">Richard Stallman</a> y otros entusiastas del *software libre* con el propósito de difundir este movimiento.
+{% assign _010 = site.posts | where: "page_id", 10 | first %}
+{% assign _013 = site.posts | where: "page_id", 13 | first %}
+{% assign _015 = site.posts | where: "page_id", 15 | first %}
+
+{% assign _010_richard_stallman               = _010.url %}
+{% assign _013_tipos_licencias_software_libre = _013.url %}
+{% assign _015_gnu                            = _015.url %}
+
+La **Fundación por el Software Libre** (**Free Software Foundation**) es una organización creada en octubre de 1985 por <a href="{{_010_richard_stallman}}">Richard Stallman</a> y otros entusiastas del *software libre* con el propósito de difundir este movimiento.
 
 Esta es una organización sin fines de lucro con la misión mundial de promover la libertad de los usuarios de computadoras. Defienden los derechos de todos los usuarios de software.
 
 La *FSF* centra su trabajo fundamentalmente en asuntos legales, organizativos y promocionales en beneficio de la comunidad de usuarios de *software libre*.
 
-La fundación continuó los proyectos existentes de <a href="/linux/Que-es-GNU">GNU</a>, como la venta de manuales y cintas, y contrató a desarrolladores del sistema de *software libre*. Desde entonces, ha continuado con estas actividades, además de abogar por el movimiento del software libre.
+La fundación continuó los proyectos existentes de <a href="{{_015_gnu}}">GNU</a>, como la venta de manuales y cintas, y contrató a desarrolladores del sistema de *software libre*. Desde entonces, ha continuado con estas actividades, además de abogar por el movimiento del software libre.
 
 También es la administradora de varias licencias de *software libre*, lo que significa que las publica y tiene la capacidad de realizar revisiones según sea necesario.
 
@@ -25,7 +33,7 @@ Desde 1991 hasta 2001, la aplicación de la *GPL* se hizo de manera informal, ge
 
 ### Licencias GNU
 
-La *FSF* elabora, mantiene y defiende la *Licencia Pública General GNU* (<a href="Tipos-de-Licencias-de-Software-Libre#GNU LGPL">GNU GPL</a>), la licencia de software libre más utilizada, cuya última versión es la **GPLv3** que fue publicada en forma definitiva en junio de 2007. También es responsable de la [*GNU LGPL\|Licencia Pública General Reducida GNU*] (*GNU LGPL*) y la *Licencia de documentación libre GNU* (*GNU iFDL*). Tiene recursos y voluntad para hacer cumplir las licencias que elabora, pero solo puede presentar demandas sobre software del cual posea derechos de autor. La fundación se enfrenta cada año a unas 50 violaciones de la *GPL* y siempre trata de evitar llegar a los tribunales.
+La *FSF* elabora, mantiene y defiende la *Licencia Pública General GNU* (<a href="{{_013_tipos_licencias_software_libre}}#GNU LGPL">GNU GPL</a>), la licencia de software libre más utilizada, cuya última versión es la **GPLv3** que fue publicada en forma definitiva en junio de 2007. También es responsable de la [*GNU LGPL\|Licencia Pública General Reducida GNU*] (*GNU LGPL*) y la *Licencia de documentación libre GNU* (*GNU iFDL*). Tiene recursos y voluntad para hacer cumplir las licencias que elabora, pero solo puede presentar demandas sobre software del cual posea derechos de autor. La fundación se enfrenta cada año a unas 50 violaciones de la *GPL* y siempre trata de evitar llegar a los tribunales.
 
 <div id="Alojamiento de Proyectos"><br></div>
 

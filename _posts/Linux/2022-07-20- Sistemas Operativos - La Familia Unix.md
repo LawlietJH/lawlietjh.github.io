@@ -7,19 +7,33 @@ published: true
 page_id: 19
 ---
 
+{% assign _010 = site.posts | where: "page_id", 10 | first %}
+{% assign _013 = site.posts | where: "page_id", 13 | first %}
+{% assign _014 = site.posts | where: "page_id", 14 | first %}
+{% assign _015 = site.posts | where: "page_id", 15 | first %}
+{% assign _016 = site.posts | where: "page_id", 16 | first %}
+{% assign _018 = site.posts | where: "page_id", 18 | first %}
+
+{% assign _010_richard_stallman               = _010.url %}
+{% assign _013_tipos_licencias_software_libre = _013.url %}
+{% assign _014_unix                           = _014.url %}
+{% assign _015_gnu                            = _015.url %}
+{% assign _016_gnu_linux                      = _016.url %}
+{% assign _018_linus_torvalds                 = _018.url %}
+
 *Windows de Microsoft* y *macOS de Apple*, son quizás los sistemas operativos más conocidos. Pero no son los únicos.
 
 <div id="Unix"><br></div>
 
 ### UNIX
 
-El sistema operativo <a href="Que-es-Unix">UNIX</a> fue creado por los laboratorios Bell de *AT&T* en 1969 y es un *SO* multiusuario y multitarea, que corre en diferentes computadoras, desde *supercomputadoras*, *Mainframes*, *Minicomputadoras*, computadoras personales y estaciones de trabajo.
+El sistema operativo <a href="{{_014_unix}}">UNIX</a> fue creado por los laboratorios Bell de *AT&T* en 1969 y es un *SO* multiusuario y multitarea, que corre en diferentes computadoras, desde *supercomputadoras*, *Mainframes*, *Minicomputadoras*, computadoras personales y estaciones de trabajo.
 
 <div id="GNU"><br></div>
 
 ### GNU
 
-<a href="Que-es-GNU">GNU</a> se inició en 1983 por <a href="/software libre/Quien-es-Richard-Stallman">Richard Stallman</a>. Tiene como objetivo el desarrollo de un sistema operativo Unix completo y compuesto enteramente de Software libre.
+<a href="{{_015_gnu}}">GNU</a> se inició en 1983 por <a href="_010_richard_stallman">Richard Stallman</a>. Tiene como objetivo el desarrollo de un sistema operativo Unix completo y compuesto enteramente de Software libre.
 
 <div id="GNU Hurd"><br></div>
 
@@ -31,11 +45,11 @@ El sistema operativo <a href="Que-es-Unix">UNIX</a> fue creado por los laborator
 
 ### GNU/Linux
 
-A principios de los años 90, <a href="Quien-es-Linus-Torvalds">Linus Torvalds</a> comenzó a escribir un sistema operativo que pudiera ejecutarse en un computador personal de la época. Al mismo tiempo, ya se desarrollaba otro proyecto con la intención de crear un sistema operativo tipo *Unix* gratuito: el proyecto *GNU*. Este proyecto tenía muchas herramientas listas, pero faltaba el núcleo del sistema. Fue cuestión de tiempo para que el núcleo Linux se distribuyera junto con las herramientas GNU, dando lugar a lo que hoy conocemos como <a href="Que-es-GNU-Linux">GNU/Linux</a> o simplemente *Linux*, un sistema operativo libre de la familia *Unix*.
+A principios de los años 90, <a href="{{_018_linus_torvalds}}">Linus Torvalds</a> comenzó a escribir un sistema operativo que pudiera ejecutarse en un computador personal de la época. Al mismo tiempo, ya se desarrollaba otro proyecto con la intención de crear un sistema operativo tipo *Unix* gratuito: el proyecto *GNU*. Este proyecto tenía muchas herramientas listas, pero faltaba el núcleo del sistema. Fue cuestión de tiempo para que el núcleo Linux se distribuyera junto con las herramientas GNU, dando lugar a lo que hoy conocemos como <a href="{{_016_gnu_linux}}">GNU/Linux</a> o simplemente *Linux*, un sistema operativo libre de la familia *Unix*.
 
 *GNU/Linux* es uno de los términos empleados para referirse a la combinación del núcleo libre similar a Unix denominado *Linux* con el sistema operativo *GNU*.
 
-Lo que realmente marcó la diferencia y el éxito de este proyecto fue la licencia de uso: el proyecto GNU creó la licencia de software <a href="/software libre/Tipos-de-Licencias-de-Software-Libre#GNU LGPL">GPL</a>, una licencia que garantiza libertades en el uso, modificación y colaboración respecto al software. Así que Linux y las herramientas de *GNU* son desarrolladas, revisadas, mejoradas y adaptadas por miles de usuarios y cientos de empresas alrededor del mundo. Además, este conjunto está disponible sin costo y su código fuente es abierto.
+Lo que realmente marcó la diferencia y el éxito de este proyecto fue la licencia de uso: el proyecto GNU creó la licencia de software <a href="{{_013_tipos_licencias_software_libre}}#GNU LGPL">GPL</a>, una licencia que garantiza libertades en el uso, modificación y colaboración respecto al software. Así que Linux y las herramientas de *GNU* son desarrolladas, revisadas, mejoradas y adaptadas por miles de usuarios y cientos de empresas alrededor del mundo. Además, este conjunto está disponible sin costo y su código fuente es abierto.
 
 <div id="BSD"><br></div>
 

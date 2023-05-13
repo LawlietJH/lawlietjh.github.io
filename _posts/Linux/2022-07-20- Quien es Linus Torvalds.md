@@ -7,7 +7,17 @@ published: true
 page_id: 18
 ---
 
-**Linus Benedict Torvalds** (Helsinki, Finlandia, 28 de diciembre de 1969) es un ingeniero de software finlandés-estadounidense, conocido por iniciar y mantener el desarrollo del kernel (en español, núcleo) <a href="Que-es-GNU-Linux">Linux</a>, basándose en el sistema operativo libre <a href="Que-es-Minix">Minix</a> (Qué es un clon de <a href="Que-es-Unix">Unix</a>) creado por Andrew S. Tanenbaum y en algunas herramientas, varias utilidades y los compiladores desarrollados por el proyecto <a href="Que-es-GNU">GNU</a>. Actualmente es responsable de la coordinación del proyecto. También ha desarrollado el software de control de versiones Git.
+{% assign _014 = site.posts | where: "page_id", 14 | first %}
+{% assign _015 = site.posts | where: "page_id", 15 | first %}
+{% assign _016 = site.posts | where: "page_id", 16 | first %}
+{% assign _017 = site.posts | where: "page_id", 17 | first %}
+
+{% assign _014_unix      = _014.url %}
+{% assign _015_gnu       = _015.url %}
+{% assign _016_gnu_linux = _016.url %}
+{% assign _017_minix     = _017.url %}
+
+**Linus Benedict Torvalds** (Helsinki, Finlandia, 28 de diciembre de 1969) es un ingeniero de software finlandés-estadounidense, conocido por iniciar y mantener el desarrollo del kernel (en español, núcleo) <a href="{{_016_gnu_linux}}">Linux</a>, basándose en el sistema operativo libre <a href="{{_017_minix}}">Minix</a> (Qué es un clon de <a href="{{_014_unix}}">Unix</a>) creado por Andrew S. Tanenbaum y en algunas herramientas, varias utilidades y los compiladores desarrollados por el proyecto <a href="{{_015_gnu}}">GNU</a>. Actualmente es responsable de la coordinación del proyecto. También ha desarrollado el software de control de versiones Git.
 
 ### Creación de Linux
 

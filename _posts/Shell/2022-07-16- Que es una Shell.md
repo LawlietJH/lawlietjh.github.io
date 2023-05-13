@@ -7,6 +7,12 @@ published: true
 page_id: 7
 ---
 
+{% assign _008 = site.posts | where: "page_id", 8 | first %}
+{% assign _016 = site.posts | where: "page_id", 16 | first %}
+
+{% assign _008_origenes_shell = _008.url %}
+{% assign _016_gnu_linux = _016.url %}
+
 <div id="Shell"></div>
 En informática, el **shell** (*intérprete de órdenes*​ o *intérprete de comandos*) es el programa informático que provee una interfaz de usuario para acceder a los servicios del sistema operativo.
 
@@ -15,7 +21,7 @@ Dependiendo del tipo de interfaz que empleen, los shells pueden ser:
 * Gráficos (GUI, Graphical User Interface).
 * De lenguaje natural (NUI, Natural User Interface).
 
-Estos son necesarios para invocar o ejecutar los distintos programas disponibles en la computadora. Un ejemplo de ello en Windows es `PowerShell`, en <a href="/linux/Que-es-GNU-Linux">GNU/Linux</a> es <a href="Origenes-de-las-Shell-que-conocemos#Bash">Bash</a> y en MacOS es <a href="Origenes-de-las-Shell-que-conocemos#Zsh">Zsh</a> (también se puede utilizar en sistemas de GNU/Linux).
+Estos son necesarios para invocar o ejecutar los distintos programas disponibles en la computadora. Un ejemplo de ello en Windows es `PowerShell`, en <a href="{{_016_gnu_linux}}">GNU/Linux</a> es <a href="{{_008_origenes_shell}}#Bash">Bash</a> y en MacOS es <a href="{{_008_origenes_shell}}#Zsh">Zsh</a> (también se puede utilizar en sistemas de GNU/Linux).
 
 Ejemplo: Ejecución del comando `ls` en Bash para listar el contenido de un directorio.
 ```bash
