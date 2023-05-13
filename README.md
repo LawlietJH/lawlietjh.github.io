@@ -1,15 +1,15 @@
-# Déleon Blog
+# [Déleon Blog](https://lawlietjh.github.io/)
 
-## Recientes
+## [Recientes](https://lawlietjh.github.io/archives#Recientes)
 * [06 May - ¿Qué es el Flujo de Datos Alternativo (ADS)?](https://lawlietjh.github.io/inform%C3%A1tica/Que-es-el-Flujo-de-Datos-Alternativo)
 
-## 2023 April
+## [2023 April](https://lawlietjh.github.io/archives#2023-April)
 * [29 Apr - El Origen del Emblema Hacker](https://lawlietjh.github.io/inform%C3%A1tica/El-Origen-del-Emblema-Hacker)
 * [22 Apr - ¿Qué es la Memoria Caché?](https://lawlietjh.github.io/inform%C3%A1tica/Que-es-la-Memoria-Cache)
 * [15 Apr - ¿Qué es un Servidor Proxy?](https://lawlietjh.github.io/inform%C3%A1tica/Que-es-un-Servidor-Proxy)
 * [09 Apr - ¿Qué es la Codificación en Base64?](https://lawlietjh.github.io/inform%C3%A1tica/Que-es-la-Codificaci%C3%B3n-en-Base64)
 
-## 2022 July
+## [2022 July](https://lawlietjh.github.io/archives#2022-July)
 * [28 Jul - Cómo crear una API REST con Python y Flask](https://lawlietjh.github.io/programaci%C3%B3n/Como-crear-una-API-REST-con-Python-y-Flask)
 * [28 Jul - Métodos de petición HTTP](https://lawlietjh.github.io/web/Metodos-de-peticion-HTTP)
 * [28 Jul - API: ¿Qué es y para qué sirve?](https://lawlietjh.github.io/web/API-Que-es-y-para-que-sirve)
