@@ -11,7 +11,7 @@ page_id: 7
 {% assign _016 = site.posts | where: "page_id", 16 | first %}
 
 {% assign _008_origenes_shell = _008.url %}
-{% assign _016_gnu_linux = _016.url %}
+{% assign _016_gnu_linux      = _016.url %}
 
 <div id="Shell"></div>
 En informática, el **shell** (*intérprete de órdenes*​ o *intérprete de comandos*) es el programa informático que provee una interfaz de usuario para acceder a los servicios del sistema operativo.

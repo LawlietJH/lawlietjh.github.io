@@ -9,9 +9,9 @@ page_id: 27
 
 {% assign _014 = site.posts | where: "page_id", 14 | first %}
 
-{% assign _014_unix      = _014.url %}
+{% assign _014_unix = _014.url %}
 
-<img class="img-glider" src="/assets/images/27/glider.png" align="right">
+<img class="img-glider" src="/assets/images/027/glider.png" align="right">
 
 El **emblema hacker** fue propuesto primero en *octubre de 2003* por **Eric S. Raymond**, alegando la necesidad de una unificación y un símbolo reconocible para la percepción de la **cultura hacker**. Este emblema fue tomado a partir de un **_Glider_**.
 

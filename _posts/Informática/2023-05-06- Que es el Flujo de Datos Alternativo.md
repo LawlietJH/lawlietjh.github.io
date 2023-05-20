@@ -33,7 +33,7 @@ El *ADS* creado no aumentará el peso ni alterara el archivo original, estos **f
 
 Esto solo funciona en una unidad con formato **NTFS**. Tiene sus limitaciones, es importante resaltar que estas capas ocultas de texto no son posibles de compartir al sacar el archivo del disco duro. Estas capas no son más que flujos de datos que apuntan al mismo archivo.
 
-<img class="general-img" src="/assets/images/28/alternate_data_streams_ADS.png" width="300" align="right">
+<img class="general-img" src="/assets/images/028/alternate_data_streams_ADS.png" width="300" align="right">
 Desde Windows 2000, el sistema de archivos **NTFS** en Windows ha admitido **flujos de datos alternativos**, que le permiten almacenar datos *"detrás"* de un nombre de archivo con el uso de un nombre de flujo. No es detectable mientras se navega por el sistema de archivos, o en cualquier lugar dentro de Windows, solo se puede acceder a él con la **"clave secreta"**, que en realidad es solo el nombre de la transmisión.
 
 Puedes pensar en estas secuencias adicionales como compartimientos secretos o capas dentro del archivo al que solo se puede acceder si se conoce el **"código secreto"**, que en este caso es solo el nombre de la secuencia. Esta no es una forma completamente segura de ocultar datos, como ilustraremos más adelante, pero es un truco divertido para conocer.
@@ -65,11 +65,11 @@ Probemos con un archivo de texto.
 Podemos crear o acceder a un flujo de datos alternativo utilizando el notepado de la siguient emanera: `notepad file.txt:ads_name`.
 Podemos crear tantos como queramos y acceder a ellos utilizando el nombre asignado al *ADS*.
 
-<img class="general-img" src="/assets/images/28/hidden_section.png" width="240" align="right">
+<img class="general-img" src="/assets/images/028/hidden_section.png" width="240" align="right">
 Si abrimos de forma normal, no aparecerá nada de lo anterior escrito. Entonces podremos escribir de forma normal en el archivo y tener algún texto oculto en distintos flujos.
 Pueden hacerse tantas capas como queramos, lo importante es que se llamen diferente.
 
-<img class="general-img" src="/assets/images/28/command_dir-r.png" width="270" align="right">
+<img class="general-img" src="/assets/images/028/command_dir-r.png" width="270" align="right">
 Si el archivo tiene un espacio en el nombre es importante colocarlo entre comillas para que funcione.
 Utilizando el comando `dir` podemos ver los archivos y carpetas que se encuentran en la ruta actual,
 pero si utilizamos el comando `dir /r` es posible ver los flujos alternativos del archivo, estos serám todos los archivos con terminación **:$DATA**.

@@ -43,7 +43,7 @@ Si ahora corremos la aplicación con el comando `python app.py` se nos iniciará
 
 Podemos observar lo siguiente:
 
-![Error 404](/assets/images/23/python_API_REST-404.png)
+![Error 404](/assets/images/023/python_API_REST-404.png)
 
 Esto que estamos viendo es nuestro servidor, pero al no tener nada que mostrar, por defecto se nos mostrará el código de estado *404*.
 
