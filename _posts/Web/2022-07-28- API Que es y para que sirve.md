@@ -8,7 +8,6 @@ page_id: 21
 ---
 
 {% assign _020 = site.posts | where: "page_id", 20 | first %}
-
 {% assign _020_json = _020.url %}
 
 **API** son las siglas de *Application Programming Interface* o *Interfaz de Programación de Aplicaciones* es un conjunto de subrutinas, funciones o métodos para ser utilizada por otro software como una capa de abstracción. Es la manera más simple de comunicar 2 componentes de software completamente distintos entre sí.

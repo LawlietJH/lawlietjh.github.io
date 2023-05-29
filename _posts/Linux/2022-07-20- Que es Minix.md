@@ -12,7 +12,6 @@ page_id: 17
 {% assign _015 = site.posts | where: "page_id", 15 | first %}
 {% assign _016 = site.posts | where: "page_id", 16 | first %}
 {% assign _018 = site.posts | where: "page_id", 18 | first %}
-
 {% assign _013_tipos_licencias_software_libre = _013.url %}
 {% assign _014_unix                           = _014.url %}
 {% assign _015_gnu                            = _015.url %}

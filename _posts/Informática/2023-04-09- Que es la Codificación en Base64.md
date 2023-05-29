@@ -9,7 +9,6 @@ page_id: 24
 
 {% assign _010 = site.posts | where: "page_id", 10 | first %}
 {% assign _011 = site.posts | where: "page_id", 11 | first %}
-
 {% assign _010_richard_stallman   = _010.url %}
 {% assign _011_software_fundation = _011.url %}
 

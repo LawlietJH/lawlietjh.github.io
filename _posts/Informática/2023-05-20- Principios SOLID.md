@@ -3,7 +3,7 @@ title: "Principios SOLID"
 category: Informática
 tags: Informática, Python
 date: 2023-05-20 00:00
-published: false
+published: true
 page_id: 29
 ---
 
@@ -24,8 +24,9 @@ SOLID es un acrónimo que representa cinco principios básicos de la programaci�
 
 Cada clase deberá tener una **Responsabilidad Única** y no deberá tener más responsabilidades que esa, de esta manera las clases se vuelven más fáciles de mantener, modificar y probar, lo que mejora la calidad del software y su capacidad para adaptarse a los cambios. Además, este principio ayuda a evitar la duplicación de código y reduce la complejidad del sistema en general.
 
-<br>
-Ejemplo de código *sin utilizar SOLID*:
+#### Ejemplo de código **sin utilizar SOLID**
+
+Supongamos que tenemos una clase llamada `Order` la cual tiene 3 métodos que sirven para manejar una orden. Podemos notar que agregar un objeto o mirar el precio total de estos pueden ser su responsabilidad, pero si observamos con detenimiento el método `pay` se encarga de una responsabilidad distinta a la de la orden, se necesitaría quizás un procesador de pagos para ello.
 
 ```python
 class Order:
@@ -82,10 +83,11 @@ Processing debit payment type
 Verifying security code: 0372846
 ```
 
-Aunque podríamos creer que el método `pay` pudiera esta bien dentro de la clase `Order` realmente este método se encarga de una responsabilidad distinta a la de la orden.
+#### Ejemplo de código con **Single Responsibility**:
 
-<br>
-Ejemplo de código con ***Single Responsibility***:
+Creando en este caso una nueva clase llamada `PaymentProcessor` que tendrá la responsabilidad de los métodos de pago, no solo hace que el código sea más organizado, sino que nos permite incluso poder expandir la funcionalidad de forma más simple.
+
+Aunque el resultado es el mismo para ambos ejemplos, podemos darnos cuenta de que el código ahora es más mantenible y escalable.
 
 ```python
 # Ahora se tiene una clase que sólo manejará métodos de la orden
@@ -146,10 +148,6 @@ Processing debit payment type
 Verifying security code: 0372846
 ```
 
-Creando en este caso una nueva clase `PaymentProcessor` que tendrá la responsabilidad de los métodos de pago, no solo hace que el código sea más organizado, sino que nos permite incluso poder expandir la funcionalidad de forma más simple.
-
-Aunque el resultado es el mismo para ambos ejemplos, podemos darnos cuenta de que el código ahora es más mantenible y escalable.
-
 <div id="openclosed"><br></div>
 
 ### Open/Closed Principle
@@ -158,8 +156,9 @@ Aunque el resultado es el mismo para ambos ejemplos, podemos darnos cuenta de qu
 
 El principio de **Abierto/Cerrado** toma en cuenta que cuando se requiera agregar un nuevo comportamiento en un sistema existente, en lugar de modificar clases antiguas, se deben crear nuevas y utilizarlas mediante herencia y redefinición de los métodos de la clase padre o mediante inyectado de dependencias que implemente el mismo contrato. Esto evita que los objetos existentes cambien con frecuencia.
 
-<br>
-Ejemplo de código *sin utilizar SOLID*:
+#### Ejemplo de código **sin utilizar SOLID**
+
+Imaginemos que tuviéramos esta funcionalidad que se utiliza para comparar 2 números, pero se nos pide extenderla, agregando que también se pudieran comparar 3 números:
 
 ```python
 class Numbers:
@@ -171,7 +170,7 @@ class Numbers:
         return bigger
 ```
 
-Imaginemos que tuvieramos esta funcionalidad donde se utiliza para comparar 2 números, pero se nos pide extender la funcionalidad, agregando que también se pudieran comparar ahora 3 números, lo más típico sería que se pensaría en hacer una refactorización de la siguiente forma:
+Lo más típico podría ser que se quiera hacer una refactorización de la siguiente manera:
 
 ```python
 # "Refactorización"
@@ -187,12 +186,13 @@ class Numbers:
         return bigger
 ```
 
-Aunque no esta mal, podría darse el caso en códigos muy grandes que al modificar cosas ya existentes, afecte la funcionalidad completa y que altere las pruebas unitarias que ya se tenían.
+Aunque no está mal, podría darse el caso en códigos muy grandes que, al modificar cosas ya existentes, afecte la funcionalidad completa y que altere las pruebas unitarias que ya se tenían.
 
-Este principio nos recomienda intentar extender la funcionalidad, sin modificar lo ya existente. Aunque hay que recordar, que estos son principios NO reglas, por lo que no se exige que se haga en todo momento, habrá casos en los que sería imposible no modificar lo existente.
+Este principio nos recomienda intentar **extender la funcionalidad**, **sin modificar** lo ya existente. Aunque hay que recordar, que estos son **principios NO reglas**, por lo que no se exige que se haga en todo momento, habrá casos en los que sería imposible no modificar lo existente.
 
-<br>
-Ejemplo de código con ***Open/Closed***:
+#### Ejemplo de código con **Open/Closed**
+
+Tomando el primer ejemplo sin refactorizar, con solo agregarle una funcionalidad nueva, conseguimos extenderla sin necesitar modificar lo existente, en pocas palabras *mantuvimos la clase abierta para la extensión, pero cerrada para la modificación.*
 
 ```python
 class Numbers:
@@ -209,8 +209,6 @@ class Numbers:
         return bigger
 ```
 
-Con solo agregar una funcionalidad nueva, conseguimos extender la funcionalidad sin necesitar modificar lo existente, en pocas palabras *mantuvimos la clase abierta para la extensión, pero cerrada para la modificación.*
-
 <div id="liskov-substitution"><br></div>
 
 ### Liskov's Substitution
@@ -220,8 +218,13 @@ probablemente tienes la abstracción incorrecta..."
 
 La **Sustitución de Liskov** nos dice que si en alguna parte de nuestro código estamos utilizamos una clase y creamos clases hijas, esas clases hijas tienen que poder sustituir al padre y el código debe seguir funcionando exactamente de la misma forma.
 
-<br>
-Ejemplo de código *sin utilizar SOLID*:
+La idea de este principio es que solo debemos crear clases padre que tengan todos los métodos que realmente sean necesarios a heredar y de esta manera hacer una abstracción correcta de lo que queremos, y para conseguirlo podemos también utilizar herencia múltiple para completar las necesidades de las clases hijas, siempre y cuando se utilicen todos los métodos de las clases padre.
+
+#### Ejemplo de código **sin utilizar SOLID**
+
+Un **niño** es una **persona**, pero un niño no tendrá *ine* o *tarjeta de crédito* y no podría *pagar con tarjeta*, por lo tanto, la clase `Child` que hereda de `Person` no utilizaría los atributos `ine` o `credit_card` y no debería poder utilizar el método `payment`. En estos casos lo típico que se haría, es pretender que esos atributos y métodos no existen o indicar que no se podrán utilizar, pero esto es una muy mala práctica.
+
+Este caso nos muestra que tenemos una abstracción errónea de lo que realmente queremos conseguir, ya que hay cosas que realmente no se van a utilizar.
 
 ```python
 class Person:
@@ -244,12 +247,9 @@ class Child(Person):
         raise RuntimeError("A child cannot pay")
 ```
 
-Un **niño** es una **persona**, pero un niño no tendrá *ine* o *tarjeta de crédito* y no podría *pagar con tarjeta*, por lo tanto, la clase `Child` que hereda de `Person` no utilizaría los atributos `ine` o `credit_card` y no debería poder utilizar el método `payment`. En estos casos lo típico que se haría, es pretender que esos atributos y métodos no existen o indicar que no se podrán utilizar, pero esto es una muy mala práctica.
+#### Ejemplo de código con **Liskov's Substitution**
 
-Este caso nos muestra que tenemos una abstracción erronea de lo que realmente queremos conseguir ya que hay cosas que realmente no se van a utilizar.
-
-<br>
-Ejemplo de código con ***Liskov's Substitution***:
+Ahora podemos ver que tenemos la abstracción correcta, cada clase hereda lo que realmente le corresponde.
 
 ```python
 class Person:
@@ -278,18 +278,21 @@ class Child(Person):
         self.tutor.payment()
 ```
 
-Ahora podemos ver que tenemos la abstracción correcta, cada clase hereda lo que realmente le corresponde.
-
 <div id="interface-segregation"><br></div>
 
 ### Interface Segregation
 
 "Un cliente no debería ser obligado a depender de métodos que no utiliza."
 
-En la **Segregación de Interfaz** se nos indica que ninguna clase deberá depender de métodos que no serán utilizados, es decir, cuando creamos una nueva interfaz que definirá los comportamientos de una clase, debemos estar seguros que se usen todos sus métodos; para que esto se cumpla, se recomienda tener varias interfaces pequeñas que cumplan con las funcionalidades necesarias.
+En la **Segregación de Interfaz** se nos indica que ninguna clase deberá depender de métodos que no serán utilizados, es decir, cuando creamos una nueva interfaz que definirá los comportamientos de una clase, debemos estar seguros de que se usen todos sus métodos; para que esto se cumpla, se recomienda tener varias interfaces pequeñas que cumplan con las funcionalidades necesarias.
 
-<br>
-Ejemplo de código *sin utilizar SOLID*:
+Esto es muy similar al principio anterior, la diferencia es que se enfoca en la herencia de interfaces.
+
+#### Ejemplo de código **sin utilizar SOLID**
+
+Imaginemos que tenemos una interfaz, la cual indica la estructura que deberán tener las clases en donde se herede. Esta interfaz exigirá que se utilicen los métodos que contiene: `get_values`, `set_quantity` y `rewind`. Si uno de estos métodos falta, se nos indicará que habrá que crearlo.
+
+Podemos ver el problema de este ejemplo muy claramente: un `Cassette` que hereda de `Products` puede utilizar la funcionalidad `rewind` pero, en el caso de un `CD` que hereda de `Products` no podrá utilizar la función `rewind`, ya que los CD no se pueden rebobinar, a diferencia de los casetes. Por lo tanto, esta es una abstracción incorrecta y nos arrojará un error.
 
 ```python
 from abc import ABCMeta, abstractmethod
@@ -354,12 +357,9 @@ Traceback (most recent call last):
 TypeError: Can't instantiate abstract class CD with abstract methods rewind
 ```
 
-Como podemos ver, tenemos una interfaz la cual indíca la estructura que deberán tener las clase en donde se herede y la interfaz exigirá que se utilicen sus 3 métodos: `get_values`, `set_quantity` y `rewind`. Si uno de estos métodos falta, se nos indicará que habrá que crearlo.
+#### Ejemplo de código con **Interface Segregation**
 
-Un `Cassette` que hereda de `Products` puede utilizar la funcionalidad `rewind` pero en el caso de un `CD` que hereda de `Products` no podrá utilizar la función `rewind`, por lo tanto esta es una abstracción incorrecta y nos arroja un error.
-
-<br>
-Ejemplo de código con ***Interface Segregation***:
+Ahora, como podremos observar, a la interfaz `Actions` se le pasa el método `rewind`, de esta manera podemos heredar en `Cassette` a `Products` y `Actions`, y en `CD` podemos heredar solamente `Products` y cumplir con este principio.
 
 ```python
 from abc import ABCMeta, abstractmethod
@@ -423,8 +423,6 @@ Resultados:
 {'name': 'Trash Metal', 'quantity': 4}
 ```
 
-Como podemos observar, la interfaz `Products` se segrega en métodos de un producto y acciones, de esta manera podemos heredar en `Cassette` a `Products` y `Actions`. En `CD` podemos heredar solamente `Products` y cumplir con este principio.
-
 <div id="dependency-inversion"><br></div>
 
 ### Dependency Inversion
@@ -433,8 +431,11 @@ Como podemos observar, la interfaz `Products` se segrega en métodos de un produ
 
 El objetivo de la **Inversión de Dependencias** es desacoplar nuestro código de sus dependencias directas. Este principio dice que las capas de las clases superiores no deben de depender de las capas inferiores, sino que ambas dependen de abstracciones.
 
-<br>
-Ejemplo de código *sin utilizar SOLID*:
+#### Ejemplo de código **sin utilizar SOLID**
+
+Podremos ver que tenemos una *canasta de compras*, y al querer pagar las compras, se busca guardar la información en una base de datos y luego pagar.
+
+Esta implementación dará problemas al hacer **Pruebas Unitarias**, ya que tenemos dependencias en la función para comprar.
 
 ```python
 class Shopping:
@@ -464,12 +465,13 @@ shopping_basket = ShoppingBasket()
 shopping_basket.buy(shopping)
 ```
 
-Podemos ver que tenemos una *canasta de compras*, y al querer pagar las compras, se busca guardar la información en la base de datos y luego pagar.
+#### Ejemplo de código con **Dependency Inversion**
 
-Esta implementación dará problemas al hacer **Pruebas Unitarias** ya que tenemos dependencias en la función para comprar.
+De esta manera podremos incluso tener distintas clases para *Persistencia* y distintas clases de *Métodos de Pago*, ya que al tener interfaces, obligamos a que se mantengan siempre los mismos métodos, de esta forma no importará la instancia que se mande, se utilizará de la misma manera.
 
-<br>
-Ejemplo de código con ***Dependency Inversion***:
+En la implementación de las compras, al crear la instancia de `ShoppingBasket` se le enviarán todas las dependencias necesarias, y al mantener la misma estructura, los tipos de dependencias `Persistence` o `PaymentMethod`, internamente, se nos permite usarlo por igual, sin importar si por ejemplo `Persistance` es de tipo `MongoDatabase` o `MySQLDatabase` se podrá utilizar el método `save()` desde la instancia `self._persistance`.
+
+Con esto, al aplicar la **inyección de dependencias**, ahora tendremos una implementación fácilmente testeable.
 
 ```python
 from abc import ABCMeta, abstractmethod
@@ -533,8 +535,8 @@ shopping_basket_2 = ShoppingBasket(mysql_db, credit_card)
 shopping_basket_2.buy(shopping)
 ```
 
-De esta forma podemos incluso tener distintas clases para *Persistencia* y distintas clases de *Métodos de Pago* ya que al tener interfaces, obligamos a que se mantengan siempre los mismos métodos, de esta forma no importará la instancia que se mande, se utilizará de la misma manera.
+## Conclusión:
 
-En la implementacion de las compras, al crear la instancia de `ShoppingBasket` se le enviarán todas las dependencias necesarias, y al mantener la misma estructura los tipos de dependencias `Persistence` o `PaymentMethod`, internamente se nos permite usarlo por igual sin importar si por ejemplo `Persistance` es de tipo `MongoDatabase` o `MySQLDatabase` se podrá utilizar el método `save()` desde la instancia `self._persistance`.
+Los principios SOLID nos ayudan a tener un código muy limpio y escalable. En ellos, **Single Responsibility** se enfoca en las responsabilidades separadas, **Open/Closed** se basa en la extensión en lugar de la modificación, **Liskov's Sustitution** en tener herencias donde todos los métodos sean utilizados, **Interface Segregation** en tener interfaces donde se utilicen todos los métodos necesarios y no más que eso, y finalmente, **Dependency Inversion** en el cúal se contempla la *inyección de dependencias*.
 
-Con esto al aplicar la **inyección de dependencias** ahora tendremos una implementación facilmente testeable.
+Como ven, todos los principios son muy buenos, siempre van de la mano, complementándose y reforzándose. Combinando todos ellos podremos obtener un **código de calidad**.

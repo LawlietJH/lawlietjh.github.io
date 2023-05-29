@@ -7,6 +7,16 @@ published: true
 page_id: 22
 ---
 
+### ¿Qué es el HTTP?
+
+*HTTP* es un protocolo. De hecho, el acrónimo significa **Protocolo de Transferencia de Hipertexto**. Este protocolo rige la estructura y el lenguaje de las peticiones y respuestas que tienen lugar entre clientes y servidores. Los clientes suelen ser los navegadores web, pero pueden presentarse de muchas formas, como los robots de los motores de búsqueda.
+
+Cuando visitas sitios web a través de un navegador, toda la conexión tiene lugar a través de *HTTP*. El protocolo te permite recibir datos, incluyendo *texto, imágenes, vídeos, hojas de estilo, scripts, etc.*
+
+*HTTP* ha sido una de las columnas vertebrales de la web desde principios de los 90. En las últimas décadas, ha evolucionado para ser más eficiente. En la segunda mitad de la década de 2010 se desarrolló *HTTP/2*, que permite a los clientes cargar los recursos de forma simultánea en lugar de asíncrona. Esto da lugar a un aumento masivo del rendimiento.
+
+### Métodos HTTP
+
 **HTTP** define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso determinado. Aunque estos también pueden ser sustantivos, estos métodos de solicitud a veces son llamados *HTTP verbs*.
 
 ### GET

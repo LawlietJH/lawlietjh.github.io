@@ -9,7 +9,6 @@ page_id: 7
 
 {% assign _008 = site.posts | where: "page_id", 8 | first %}
 {% assign _016 = site.posts | where: "page_id", 16 | first %}
-
 {% assign _008_origenes_shell = _008.url %}
 {% assign _016_gnu_linux      = _016.url %}
 

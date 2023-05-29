@@ -8,12 +8,22 @@ page_id: 27
 ---
 
 {% assign _014 = site.posts | where: "page_id", 14 | first %}
-
 {% assign _014_unix = _014.url %}
 
 <img class="img-glider" src="/assets/images/027/glider.png" align="right">
 
 El **emblema hacker** fue propuesto primero en *octubre de 2003* por **Eric S. Raymond**, alegando la necesidad de una unificación y un símbolo reconocible para la percepción de la **cultura hacker**. Este emblema fue tomado a partir de un **_Glider_**.
+
+Pero antes de 2003 los *hackers* tuvieron *otros emblemas* y el más querido fue la iconografía que rodea a los *piratas*, especialmente la *bandera con la calavera y las tibias cruzadas*, elemento indispensable en cualquier *web hacker* de los años 90. Entonces, la palabra pirata se identificada con *rebelde informático*. Tanto fue así que el sitio donde se alojaban los sitios web de los primeros grupos de hackers *españoles* y *latinoamericanos* llevaba el descriptivo nombre de *Isla Tortuga*.
+
+Uno de aquellos jóvenes adaptó desde el anonimato el famoso poema de *José de Espronceda*, *"La canción del pirata"*. La adaptación fue muy bien acogida y se replicó por todos los sitios de la comunidad, que entonces eran los grupos de noticias, los canales de chat y los sitios web. La nueva "Canción del Pirata Informático" empezaba así:
+
+> *"Con diez mil gigas por banda ancha,*<br>
+> *ratón en popa a toda mecha,*<br>
+> *no corta la red, sino vuela,*<br>
+> *un hacker bergantín"*
+
+Cabe aclarar que *los primeros hackers* no fueron ellos, sino los *profesionales* que trabajaban en grandes empresas, donde se estaban montando las primeras instalaciones de informática y redes, así como los *profesores*, *becarios*, *investigadores* y *personal administrativo de las universidades*, extremadamente comprometidos con la *cíber-revolución*, que no sólo vivían en primera persona sino que construían con sus propias manos.
 
 Se debe tomar en cuenta que el *hacking* no se refiere a la acción de infringir o irrumpir sin permiso en los ordenadores, en todo caso, esa acción es realizada por los llamados *crackers* y no por los *hackers*.
 
