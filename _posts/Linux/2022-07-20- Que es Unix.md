@@ -1,7 +1,7 @@
 ---
 title: "¿Qué es Unix?"
-category: "Linux"
-tags: ["Linux", Información]
+category: Linux
+tags: Linux Información
 date: 2022-07-20 21:00
 published: true
 page_id: 14

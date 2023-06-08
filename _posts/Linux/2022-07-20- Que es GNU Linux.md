@@ -1,7 +1,7 @@
 ---
 title: "¿Qué es GNU/Linux?"
 category: "Linux"
-tags: ["Linux", Información]
+tags: Linux Información
 date: 2022-07-20 21:02
 published: true
 page_id: 16

@@ -1,7 +1,7 @@
 ---
 title: "Principios SOLID"
 category: Informática
-tags: Informática, Python
+tags: Informática Python
 date: 2023-05-20 00:00
 published: true
 page_id: 29
