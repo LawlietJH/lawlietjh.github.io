@@ -1,8 +1,8 @@
 ---
-title: "Definición de Software Libre"
-category: "Software Libre"
+title: Definición de Software Libre
+category: Software Libre
 tags: ["Software Libre", Información]
-date: 2022-07-18 21:00
+date: 2022-07-15 21:00
 published: true
 page_id: 9
 ---

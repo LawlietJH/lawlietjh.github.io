@@ -1,8 +1,8 @@
 ---
-title: "¿Quién es Richard Stallman?"
-category: "Software Libre"
+title: ¿Quién es Richard Stallman?
+category: Software Libre
 tags: ["Software Libre", Información]
-date: 2022-07-19 21:00
+date: 2022-07-16 21:00
 published: true
 page_id: 10
 ---

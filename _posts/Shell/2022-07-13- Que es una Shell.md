@@ -1,8 +1,8 @@
 ---
-title: "¿Qué es una Shell?"
+title: ¿Qué es una Shell?
 category: Shell
 tags: Información Shell
-date: 2022-07-16 21:00
+date: 2022-07-13 21:00
 published: true
 page_id: 7
 ---

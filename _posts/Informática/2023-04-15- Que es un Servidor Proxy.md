@@ -1,5 +1,5 @@
 ---
-title: "¿Qué es un Servidor Proxy?"
+title: ¿Qué es un Servidor Proxy?
 category: Informática
 tags: Informática
 date: 2023-04-15 00:00

@@ -1,5 +1,5 @@
 ---
-title: "¿Qué es la Codificación en Base64?"
+title: ¿Qué es la Codificación en Base64?
 category: Informática
 tags: Informática
 date: 2023-04-09 00:00

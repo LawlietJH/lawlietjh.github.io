@@ -1,5 +1,5 @@
 ---
-title: "¿Qué es Unix?"
+title: ¿Qué es Unix?
 category: Linux
 tags: Linux Información
 date: 2022-07-20 21:00

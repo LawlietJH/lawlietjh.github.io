@@ -1,8 +1,8 @@
 ---
-title: "Cómo crear una API REST con Python y Flask"
+title: Cómo crear una API REST con Python y Flask
 category: Programación
 tags: Tutorial Python Flask API Web
-date: 2022-07-28 00:03
+date: 2022-07-29 00:00
 published: true
 page_id: 23
 ---

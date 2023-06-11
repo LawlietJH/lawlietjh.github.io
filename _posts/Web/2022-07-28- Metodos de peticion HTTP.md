@@ -1,8 +1,8 @@
 ---
-title: "Métodos de petición HTTP"
+title: Métodos de petición HTTP
 category: Web
 tags: Información HTTP Web
-date: 2022-07-28 00:02
+date: 2022-07-28 00:00
 published: true
 page_id: 22
 ---

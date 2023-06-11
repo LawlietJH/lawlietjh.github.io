@@ -1,5 +1,5 @@
 ---
-title: "¿Qué es la Memoria Caché?"
+title: ¿Qué es la Memoria Caché?
 category: Informática
 tags: Informática
 date: 2023-04-22 00:00

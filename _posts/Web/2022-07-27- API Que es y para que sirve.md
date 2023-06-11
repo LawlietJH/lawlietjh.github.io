@@ -2,7 +2,7 @@
 title: "API: ¿Qué es y para qué sirve?"
 category: Web
 tags: Información API Web
-date: 2022-07-28 00:01
+date: 2022-07-27 00:00
 published: true
 page_id: 21
 ---

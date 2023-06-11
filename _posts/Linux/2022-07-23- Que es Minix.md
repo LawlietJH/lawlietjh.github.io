@@ -1,8 +1,8 @@
 ---
-title: "¿Qué es Minix?"
+title: ¿Qué es Minix?
 category: Linux
 tags: Linux Información
-date: 2022-07-20 21:03
+date: 2022-07-23 21:00
 published: true
 page_id: 17
 ---

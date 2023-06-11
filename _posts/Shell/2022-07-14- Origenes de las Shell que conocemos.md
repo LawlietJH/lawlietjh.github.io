@@ -1,8 +1,8 @@
 ---
-title: "Orígenes de las Shell que conocemos"
+title: Orígenes de las Shell que conocemos
 category: Shell
 tags: Información Shell
-date: 2022-07-17 21:00
+date: 2022-07-14 21:00
 published: true
 page_id: 8
 ---

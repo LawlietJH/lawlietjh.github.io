@@ -1,8 +1,8 @@
 ---
-title: "¿Qué es la Free Software Fundation (FSF)?"
-category: "Software Libre"
+title: ¿Qué es la Free Software Fundation (FSF)?
+category: Software Libre
 tags: ["Software Libre", Información]
-date: 2022-07-19 21:01
+date: 2022-07-17 21:00
 published: true
 page_id: 11
 ---

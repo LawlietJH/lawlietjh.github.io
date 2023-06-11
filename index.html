@@ -17,7 +17,11 @@ page_id: 2
           </a>
         </h2>
         <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time>
-        <p>{{ post.content | strip_html | truncatewords:64 }}</p>
+        {% if post.description %}
+          <p>{{ post.description }}</p>
+        {% else %}
+          <p>{{ post.content | strip_html | truncatewords:64 }}</p>
+        {% endif %}
       </li>
     {% endif %}
   {% endfor %}

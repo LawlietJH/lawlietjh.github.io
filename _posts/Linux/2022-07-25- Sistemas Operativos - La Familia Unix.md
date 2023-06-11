@@ -2,7 +2,7 @@
 title: "Sistemas Operativos: La Familia Unix"
 category: Linux
 tags: Linux Información
-date: 2022-07-20 21:05
+date: 2022-07-25 21:00
 published: true
 page_id: 19
 ---

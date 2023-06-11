@@ -1,8 +1,8 @@
 ---
-title: "¿Quién es Linus Torvalds?"
+title: ¿Quién es Linus Torvalds?
 category: Linux
 tags: Linux Información
-date: 2022-07-20 21:04
+date: 2022-07-24 21:00
 published: true
 page_id: 18
 ---

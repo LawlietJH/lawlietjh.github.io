@@ -1,5 +1,5 @@
 ---
-title: "Principios SOLID"
+title: Principios SOLID
 category: Informática
 tags: Informática Python
 date: 2023-05-20 00:00
