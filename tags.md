@@ -12,7 +12,7 @@ page_id: 5
   {% for tag in site_tags_sort %}
     <li class="tags-link-mark">
       <a href="#{{tag | first }}" class="tags-link-capsule">
-        {{tag | first }}
+        {{ tag | first }}
       </a>
     </li>
   {% endfor %}

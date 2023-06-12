@@ -4,6 +4,7 @@
 
 @import "rouge-base16-dark";
 @import "default_colors";
+@import "bash";
 
 $body-background: $cod-grey !default;
 $body-foreground: $gallery !default;
@@ -405,7 +406,7 @@ pre {
   padding: 10px;
   font-size: 16px;
   color: #6fff00;
-  border-radius: 2px;
+  border-radius: 6px;
   // text-wrap: normal;
   overflow: auto;
   overflow-y: hidden;
