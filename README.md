@@ -2,6 +2,10 @@
 
 ## Archivo
 
+Publicaciones: 25
+* 2023: 8
+* 2022: 17
+
 ### [Recientes](https://lawlietjh.github.io/archives#Recientes)
 * [28 Oct - JWT: ¿Qué es y para qué sirve?](https://lawlietjh.github.io/inform%C3%A1tica/JWT-Que-es-y-para-que-sirve)
 * [21 Oct - MongoDB: ¿Qué es y cómo funciona?](https://lawlietjh.github.io/inform%C3%A1tica/MongoDB-Que-es-y-como-funciona)
