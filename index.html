@@ -29,9 +29,16 @@ page_id: 2
         {% if post.description %}
           <p>{{ post.description }}</p>
         {% else %}
-          <p>{{ post.content | strip_html | truncatewords:64 }}</p>
+          {% if post.show_words %}
+            {% assign content = post.content | strip_html | truncatewords:post.show_words %}
+            {% assign len_content = content | size | minus: 1 %}
+            <p>{{ content | truncate: len_content }}</p>
+          {% else %}
+            <p>{{ post.content | strip_html | truncatewords: 64 }}</p>
+          {% endif %}
         {% endif %}
       </li>
     {% endif %}
+    <br>
   {% endfor %}
 </ul>

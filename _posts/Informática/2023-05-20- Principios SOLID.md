@@ -2,22 +2,24 @@
 title: Principios SOLID
 category: Informática
 tags: Informática Python
-date: 2023-05-20 00:00
+date: 2023-05-20 21:00
+show_words: 47
 published: true
 page_id: 29
 ---
 
 En esta publicación veremos y entenderemos con ejemplos sencillos y prácticos lo que es SOLID.
 
+<div><br></div>
 ## ¿Qué es SOLID?
 
 SOLID es un acrónimo que representa cinco principios básicos de la programación orientada a objetos y el diseño. Es importante resaltar que **se trata de principios, no de reglas**.
 
+<div><br></div>
 ## Los 5 Principios S.O.L.I.D.
 <img class="general-img" src="/assets/images/029/SOLID.png" align="center">
 
 <div id="single-responsibility"><br></div>
-
 ### Single Responsibility
 
 "Una clase debe tener solo una responsabilidad, es decir, debe tener solo una razón para cambiar."
@@ -149,7 +151,6 @@ Verifying security code: 0372846
 ```
 
 <div id="openclosed"><br></div>
-
 ### Open/Closed Principle
 
 "Las entidades deberían estar abiertas para la extensión, pero cerradas para la modificación."
@@ -210,7 +211,6 @@ class Numbers:
 ```
 
 <div id="liskov-substitution"><br></div>
-
 ### Liskov's Substitution
 
 "Si parece un pato, hace cuac como un pato, pero necesita pilas...
@@ -279,7 +279,6 @@ class Child(Person):
 ```
 
 <div id="interface-segregation"><br></div>
-
 ### Interface Segregation
 
 "Un cliente no debería ser obligado a depender de métodos que no utiliza."
@@ -424,7 +423,6 @@ Resultados:
 ```
 
 <div id="dependency-inversion"><br></div>
-
 ### Dependency Inversion
 
 "Este principio recomienda el uso de inyección de dependencias."
@@ -535,7 +533,8 @@ shopping_basket_2 = ShoppingBasket(mysql_db, credit_card)
 shopping_basket_2.buy(shopping)
 ```
 
-## Conclusión:
+<div><br></div>
+## Conclusión
 
 Los principios SOLID nos ayudan a tener un código muy limpio y escalable. En ellos, **Single Responsibility** se enfoca en las responsabilidades separadas, **Open/Closed** se basa en la extensión en lugar de la modificación, **Liskov's Sustitution** en tener herencias donde todos los métodos sean utilizados, **Interface Segregation** en tener interfaces donde se utilicen todos los métodos necesarios y no más que eso, y finalmente, **Dependency Inversion** en el cúal se contempla la *inyección de dependencias*.
 

@@ -14,7 +14,7 @@ page_id: 8
 {% assign _015_gnu       = _015.url %}
 {% assign _016_gnu_linux = _016.url %}
 
-<div id="Thompson"><br></div>
+<div id="Thompson"></div>
 ### La Primera Shell
 
 El **Thompson shell** es el primer *shell de* <a href="{{_014_unix}}">Unix</a> (*sh*), introducido en la primera versión de *Unix* en 1971, y fue escrito por **Ken Thompson**. Era un simple intérprete de comandos, no diseñado para secuencias de comandos, pero, sin embargo, introdujo varias funciones innovadoras. Presenta las características de la interfaz de línea de comandos y condujo al desarrollo de las *Shell* de *Unix* posteriores.
