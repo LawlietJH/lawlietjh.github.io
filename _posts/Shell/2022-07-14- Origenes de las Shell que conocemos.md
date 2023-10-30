@@ -26,7 +26,7 @@ La **Bourne Shell** (el actual *sh*) incorporó características tales como cont
 
 Fue desarrollada por *Stephen Bourne*, de los Laboratorios Bell de AT&T. Vio la luz en *UNIX* Versión 7, distribuido a colegios y universidades y en el cual era el intérprete de comandos predeterminado. Sustituyó al *Thompson shell*, cuyo archivo ejecutable tenía el mismo nombre: `sh`. Todavía es un intérprete de comandos muy popular para entornos *Unix*.
 
-Todos los sistemas de tipo *Unix* tienen al menos un intérprete compatible con el *Bourne shell*. Se encuentra dentro de la jerarquía de archivos de *Unix* en */bin/sh*. En algunos sistemas, tal como *BSD*, */bin/sh* es un *Bourne shell* o un equivalente, pero en otros sistemas, como muchas distribuciones de <a href="/linux/Que-es-GNU-Linux">Linux</a>, */bin/sh* es un enlace simbólico a un *Shell* compatible con más características (como *Bash*). *POSIX* especifica su *Shell* estándar como un subconjunto estricto del *Korn shell*.
+Todos los sistemas de tipo *Unix* tienen al menos un intérprete compatible con el *Bourne shell*. Se encuentra dentro de la jerarquía de archivos de *Unix* en */bin/sh*. En algunos sistemas, tal como *BSD*, */bin/sh* es un *Bourne shell* o un equivalente, pero en otros sistemas, como muchas distribuciones de <a href="{{_016_gnu_linux}}">Linux</a>, */bin/sh* es un enlace simbólico a un *Shell* compatible con más características (como *Bash*). *POSIX* especifica su *Shell* estándar como un subconjunto estricto del *Korn shell*.
 
 <div id="Ksh"><br></div>
 ### KornShell: La Shell Basada en Bourne Shell

@@ -32,7 +32,7 @@ El sistema operativo <a href="{{_014_unix}}">UNIX</a> fue creado por los laborat
 
 ### GNU
 
-<a href="{{_015_gnu}}">GNU</a> se inició en 1983 por <a href="_010_richard_stallman">Richard Stallman</a>. Tiene como objetivo el desarrollo de un sistema operativo Unix completo y compuesto enteramente de Software libre.
+<a href="{{_015_gnu}}">GNU</a> se inició en 1983 por <a href="{{_010_richard_stallman}}">Richard Stallman</a>. Tiene como objetivo el desarrollo de un sistema operativo Unix completo y compuesto enteramente de Software libre.
 
 <div id="GNU Hurd"><br></div>
 
