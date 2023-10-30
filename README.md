@@ -3,8 +3,8 @@
 ## Archivo
 
 ### [Recientes](https://lawlietjh.github.io/archives#Recientes)
-* [28 Oct - JWT: ¿Qué es y para qué sirve?](https://lawlietjh.github.io/inform%C3%A1tica/JWT)
-* [21 Oct - MongoDB: ¿Qué es y cómo funciona?](https://lawlietjh.github.io/inform%C3%A1tica/MongoDB)
+* [28 Oct - JWT: ¿Qué es y para qué sirve?](https://lawlietjh.github.io/inform%C3%A1tica/JWT-Que-es-y-para-que-sirve)
+* [21 Oct - MongoDB: ¿Qué es y cómo funciona?](https://lawlietjh.github.io/inform%C3%A1tica/MongoDB-Que-es-y-como-funciona)
 
 ### [2023 May](https://lawlietjh.github.io/archives#2023-May)
 * [20 May - Principios SOLID](https://lawlietjh.github.io/inform%C3%A1tica/Principios-SOLID)
