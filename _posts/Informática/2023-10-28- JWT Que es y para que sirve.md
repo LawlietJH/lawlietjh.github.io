@@ -1,8 +1,7 @@
 ---
 title: "JWT: ¿Qué es y para qué sirve?"
-
 category: Informática
-tags: ["Informática", "Información", "JSON", "Tokens"]
+tags: Informática Información JSON Tokens
 date: 2023-10-28 21:00
 show_words: 66
 published: true
@@ -24,7 +23,9 @@ page_id: 31
 Un *JWT* tiene la siguiente estructura: **header.payload.signature**
 
 * **Header** (***Encabezado***): especifica el tipo del token (que es ***JWT***) y el algoritmo de firma utilizado, por ejemplo, ***HMAC SHA256*** o ***RSA***.
+
 * **Payload** (***Carga útil***): contiene la información que deseas transmitir. Puede ser cualquier información en formato ***JSON***, como identificadores de usuario, roles, o cualquier otro dato relevante.
+
 * **Signature** (***firma***): se crea a partir del encabezado, la carga útil y una clave secreta. La firma se utiliza para verificar la integridad del token y asegurarse de que no ha sido manipulado.
 
 Una vez teniendo las 3 partes, cada una se codifica en **<a href="{{_024_codificacion_b64}}">base64</a>** y se concatenan con un *punto*.
