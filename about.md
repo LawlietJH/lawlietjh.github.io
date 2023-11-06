@@ -10,17 +10,17 @@ page_id: 6
 
 <p>
     <span class="about-link-capsule">
-        Autor: Déleon (aka. LawlietJH)
+        Autor: <b>Déleon</b> (aka. <b>LawlietJH</b>)
     </span>
 </p>
 <p>
     <span class="about-link-capsule">
-        Github: <a href="https://github.com/LawlietJH" target="_blank">LawlietJH</a>
+        Github: <b><a href="https://github.com/LawlietJH" target="_blank">LawlietJH</a></b>
     </span>
 </p>
 <p>
     <span class="about-link-capsule">
-        Hack The Box: <a href="https://app.hackthebox.com/profile/861002" target="_blank">Deleon</a>
+        Hack The Box: <b><a href="https://app.hackthebox.com/profile/861002" target="_blank">Deleon</a></b>
     </span>
 </p>
 
@@ -28,4 +28,4 @@ page_id: 6
 
 <br>
 
-![HTB](../assets/images/DeleonHTB.png)
+![HTB](/assets/images/DeleonHTB.png)
