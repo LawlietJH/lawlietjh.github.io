@@ -60,11 +60,11 @@
     </span>
   </div>
   <div class="copyright">
-    <span>© 2023 Déleon Blog</span>
+    <span>© {{ site.year }} {{ site.title }}</span>
   </div>
-  {% if page.page_id and site.debug == false %}
+  <!-- {% if page.page_id and site.debug == false %}
     <script>
       fetch('https://deleonblog-restapi.herokuapp.com/api/views/{{ page.page_id }}', {method: 'PATCH'})
     </script>
-  {% endif %}
+  {% endif %} -->
 </footer>
