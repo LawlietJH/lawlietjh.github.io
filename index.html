@@ -29,13 +29,18 @@ page_id: 2
         {% if post.description %}
           <p>{{ post.description }}</p>
         {% else %}
+          {% assign truncatewords = 64 %}
           {% if post.show_words %}
-            {% assign content = post.content | strip_html | truncatewords:post.show_words %}
-            {% assign len_content = content | size | minus: 1 %}
-            <p>{{ content | truncate: len_content }}</p>
-          {% else %}
-            <p>{{ post.content | strip_html | truncatewords: 64 }}</p>
+            {% assign truncatewords = post.show_words %}
           {% endif %}
+          {% assign content_clean = post.content | strip_html | truncatewords: truncatewords, "" %}
+          {% assign endswith_special_char = content_clean | endswith: ".", ",", ":", ";" %}
+          {% assign len_content = content_clean | size %}
+          {% if endswith_special_char %}
+            {% assign len_content = content_clean | size | minus: 1 %}
+          {% endif %}
+          {% assign content = content_clean | truncate: len_content, "" %}
+          <p>{{ content }}...</p>
         {% endif %}
       </li>
     {% endif %}
