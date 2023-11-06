@@ -19,7 +19,7 @@ El nombre **MongoDB** proviene de "Humongous" (Gigantesco) y "Database" (Base de
 
 La razón de que MongoDB se encuentre en miles de proyectos en todo el mundo se debe a que, al estar escrito en C++, cuenta con una notoria capacidad para aprovechar los recursos de la máquina y, al estar licenciado bajo licencia GNU AGPL 3.0, se adapta perfectamente a nuestras necesidades.
 
-<div><br></div>
+
 ## Cómo funciona MongoDB
 
 MongoDB es una base de datos orientada a documentos, esto quiere decir que en lugar de guardar los datos en registros, guarda los datos en documentos. Estos documentos son almacenados en BSON, que es una representación binaria de JSON, y esto representa una de las diferencias más importantes con respecto a las bases de datos relacionales. Y resulta que no es que no es necesario seguir un esquema, los documentos de una misma colección (concepto similar a una tabla de una base de datos relacional), pueden tener esquemas diferentes.
@@ -60,12 +60,12 @@ Como se puede observar, el documento es un JSON, la diferencia, es que intername
 
 Lo interesante viene cuando queremos almacenar en una misma colección un documento como este: `{ name: "Brenda", age: "17-19", gender: "Female", type: "Immune", ...  }`. Tal como podemos ver, este no sigue el mismo esquema del primero, añadiendo algún campo nuevo que no existe en el documento anterior o incluso de un tipo distinto, pero no importa. Algo que resulta impensable en una base de datos relacional como SQL es posible en MongoDB.
 
-<div><br></div>
+
 ## Operaciones
 
 La manera en la que podemos utilizar las operaciones básicas de mongo, es muy sencillo.
 
-<div><br></div>
+
 ### Bases de datos
 
 Crear y/o seleccionar una base de datos:
@@ -83,7 +83,7 @@ Eliminar la base de datos seleccionada:
 db.dropDatabase()
 ```
 
-<div><br></div>
+
 ### Colecciones
 
 Ver las colecciones:
@@ -110,7 +110,7 @@ Ejemplo de uso:
 db.createCollection("my_collection", {capped : true, autoIndexId: true, size: 6142800, max: 10000})
 ```
 
-<div><br></div>
+
 ### Create, Read, Update & Delete (CRUD)
 
 Insertar documentos en la colección: `insert` & `insert_one`
@@ -133,10 +133,10 @@ Borrar documentos: `remove` & `remove_one`
 db.my_collection.remove({name: "Example"})
 ```
 
-<div><br></div>
+
 ##  Operadores Avanzados
 
-<div><br></div>
+
 ### Operadores de comparación
 
 Utilizados en filtros:
@@ -152,7 +152,7 @@ Utilizados en filtros:
 | **$ne**  | Coincide con todos los valores que no son iguales a un valor especificado. |
 | **$nin** | No coincide con ninguno de los valores especificados en una matriz.        |
 
-<div><br></div>
+
 ### Indexación
 
 Los índices son fundamentales para optimizar el rendimiento de las consultas. Puedes crear índices en campos específicos para acelerar las búsquedas. Por ejemplo:
@@ -161,7 +161,7 @@ db.my_collection.createIndex({field: 1}) // Crea un índice ascendente
 db.my_collection.createIndex({other_field: -1}) // Crea un índice descendente
 ```
 
-<div><br></div>
+
 ### Agregación
 
 MongoDB permite realizar operaciones de agregación para procesar datos en la base de datos y devolver resultados calculados. Aquí hay un ejemplo de agregación que calcula el promedio de una colección:
@@ -171,7 +171,7 @@ db.my_collection.aggregate([
 ])
 ```
 
-<div><br></div>
+
 ### Consultas Avanzadas
 
 MongoDB admite una variedad de operadores avanzados para realizar consultas más complejas. Por ejemplo, puedes usar el operador $or para buscar documentos que cumplan con una de varias condiciones:
@@ -184,7 +184,7 @@ db.my_collection.find({
 })
 ```
 
-<div><br></div>
+
 ### Transacciones
 
 MongoDB 4.0 y versiones posteriores admiten transacciones para garantizar la integridad de los datos en operaciones complejas que involucran varias operaciones. Puedes iniciar una transacción de la siguiente manera:
@@ -198,7 +198,7 @@ session.abortTransaction()  // Para deshacer los cambios
 session.endSession()
 ```
 
-<div><br></div>
+
 ### Geolocalización
 
 MongoDB es adecuado para datos geoespaciales. Puedes realizar consultas de geolocalización y encontrar documentos cercanos a una ubicación específica:
@@ -216,7 +216,7 @@ db.my_collection.find({
 })
 ```
 
-<div><br></div>
+
 ### Texto Completo
 
 Puedes realizar búsquedas de texto completo en campos de texto utilizando el índice de texto completo de MongoDB:
@@ -228,5 +228,5 @@ db.my_collection.find({ $text: { $search: "keyword" } })
 <br><br>
 Estos son solo algunos ejemplos de comandos y operaciones más avanzados en MongoDB. La base de datos ofrece una amplia gama de funcionalidades para adaptarse a diversas necesidades.
 
-<div><br></div>
+<br>
 Debemos recordar que la documentación oficial de MongoDB es una fuente valiosa para explorar aún más estas capacidades.

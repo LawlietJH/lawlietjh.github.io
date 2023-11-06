@@ -366,6 +366,23 @@ p em {
 
 //--------------------------------------------
 
+#posts h2, #posts h3,
+#posts h4, #posts h5,
+#posts h6 {
+  margin: 40px 0 8px 0;
+}
+
+#posts p {
+  margin: 20px 0 4px 0;
+}
+
+#posts h2.post-title,
+#posts h4.post-tags {
+  margin: 0 0 5px 0;
+}
+
+//--------------------------------------------
+
 //Item Level 1
 ul li::marker {
   content: "❯ ";

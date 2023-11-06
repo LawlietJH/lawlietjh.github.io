@@ -17,7 +17,6 @@ page_id: 31
 
 *JWT* o *JSON Web Token*, es un estándar abierto (***<a href="https://datatracker.ietf.org/doc/html/rfc7519" target="_blank">RFC 7519</a>***) que define una forma compacta y segura de transmitir información entre dos partes como un objeto **<a href="{{_020_json}}">JSON</a>**. Los *JWT* son comúnmente utilizados para la autenticación y la transmisión segura de información entre un cliente y un servidor. Consiste en tres partes: el encabezado, la carga útil y la firma, codificados en base64.
 
-<div><br></div>
 ### Estructura de un JWT
 
 Un *JWT* tiene la siguiente estructura: **header.payload.signature**
@@ -30,10 +29,10 @@ Un *JWT* tiene la siguiente estructura: **header.payload.signature**
 
 Una vez teniendo las 3 partes, cada una se codifica en **<a href="{{_024_codificacion_b64}}">base64</a>** y se concatenan con un *punto*.
 
-<div><br></div>
+
 ### Creación de un JWT
 
-**Header (Algorithm & Token Type)**
+#### Header (Algorithm & Token Type)
 ```json
 {
   "alg": "HS256",
@@ -42,8 +41,7 @@ Una vez teniendo las 3 partes, cada una se codifica en **<a href="{{_024_codific
 ```
 Base64: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9`
 
-<div><br></div>
-**Payload (Data)**
+#### Payload (Data)
 ```json
 {
   "name": "John Doe",
@@ -52,8 +50,7 @@ Base64: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9`
 ```
 Base64: `eyJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE1MTYyMzkwMjJ9`
 
-<div><br></div>
-**Verify Signature**
+#### Verify Signature
 ```python
 HMACSHA256(
   base64UrlEncode(header) + "." + base64UrlEncode(payload),
@@ -62,16 +59,16 @@ HMACSHA256(
 ```
 Base64: `hqWGSaFpvbrXkOWc6lrnffhNWR19W_S1YKFBx2arWBk`
 
-<div><br></div>
-**JWT** (***Encoded***):
+#### JWT (Encoded)
+
+Encoded: **header**.**payload**.**signature**
 ```python
 eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiSm9obiBEb2UiLCJpYXQiOjE1MTYyMzkwMjJ9.hqWGSaFpvbrXkOWc6lrnffhNWR19W_S1YKFBx2arWBk
 ```
 
-<br>
 Podemos ver más claramente el como funciona JWT en esta web: **<a href="https://jwt.io/" target="_blank">JWT.io</a>**
 
-<div><br></div>
+
 ### Algoritmos de firma
 
 El JWT puede utilizar varios algoritmos de firma para garantizar la integridad y autenticidad de los datos en el token. Los algoritmos de firma disponibles en JWT son especificados en el campo "alg" del encabezado del token (header). Algunos de los algoritmos comunes son:
@@ -102,7 +99,7 @@ La seguridad de **JWT** también depende de cómo se implementa y se almacenan l
 
 En el **RFC 7518** que habla sobre **JSON Web Algorithms (JWA)**, podremos encontrar una lista completa de los tipos de algoritmos que podemos utilizar: <a href="https://datatracker.ietf.org/doc/html/rfc7518#section-3" target="_blank">3. Cryptographic Algorithms for Digital Signatures and MACs</a>
 
-<div><br></div>
+
 ### ¿Qué son los Claims?
 
 Los "claims" son declaraciones o afirmaciones que se incluyen en la carga útil (payload).
@@ -140,7 +137,7 @@ Ejemplo de un JWT con claims:
 
 Los claims se utilizan para transportar información sobre el usuario, roles, permisos y otros datos relevantes en un formato estructurado. Al validar un JWT, el servidor puede verificar la información contenida en los claims para tomar decisiones de autorización y autenticación. Es importante asegurarse de que la información contenida en los claims sea precisa y segura, y de proteger adecuadamente el JWT para evitar la manipulación, así mismo, evitar que los claims contengan datos sensibles como contraseñas, ya que al ir codificados en base64, es información fácilmente obtenible.
 
-<div><br></div>
+
 ### Cómo funciona JWT
 
 1. **Autenticación**: Un usuario inicia sesión proporcionando su nombre de usuario y contraseña. El servidor autentica las credenciales del usuario.
@@ -155,7 +152,7 @@ Los claims se utilizan para transportar información sobre el usuario, roles, pe
 
 6. **Renovación**: JWT generalmente tienen una fecha de vencimiento (expiración) para mayor seguridad. Cuando un JWT está por vencer, el servidor puede emitir un nuevo JWT con una nueva fecha de vencimiento. Esto permite que el usuario permanezca autenticado sin tener que volver a iniciar sesión.
 
-<div><br></div>
+
 ### Consideraciones de seguridad
 
 * Se debe mantener la clave secreta segura y no se debe compartir con nadie. Si se compromete, los JWT pueden ser falsificados.

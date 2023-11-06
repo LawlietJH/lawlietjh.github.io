@@ -2,7 +2,11 @@
 layout: default
 ---
 
+{% if page.page_id >= 7 %}
+<article id="posts">
+{% else %}
 <article>
+{% endif %}
   <h2 class="post-title">{{ page.title }}</h2>
   <time datetime="{{ page.date | date_to_xmlschema }}" class="by-line">{{ page.date | date_to_string }}</time>
   <h4 class="post-tags">

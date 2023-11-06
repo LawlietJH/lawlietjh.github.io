@@ -13,7 +13,7 @@ En esta publicación les mostraré como crear una [API REST](/web/API-Que-es-y-p
 
 Usaré el software [Insomnia](https://insomnia.rest/download){:target="_blank"} para hacer las peticiones a la *API* y poder ver los resultados fácilmente.
 
-<div><br></div>
+
 ### Código base
 
 Al manejar una *API REST* nos centraremos en un **CRUD** (*Create*, *Read*, *Update*, *Delete*) a un [Endpoint](/web/API-Que-es-y-para-que-sirve#Endpoint) utilizando los [Métodos de petición HTTP](/web/Metodos-de-peticion-HTTP): *GET*, *POST*, *PUT/PATCH*, *DELETE*.
@@ -57,7 +57,7 @@ fruits_db = [
 ]
 ```
 
-<div><br></div>
+
 ### Creación de un Endpoint
 
 Para la creación de un *endpoint*, debemos tener una función que devolverá la página solicitada y deberá tener un *decorador* (llamado *route*) que vendrá desde nuestra aplicación y recibirá como parámetro el nombre de nuestro *endpoint* y los métodos de petición *HTTP* (por defecto tendrá solamente *GET*).
@@ -77,7 +77,7 @@ No importa cuantos *endpoints* tengas al final, lo importante es que seas organi
 
 En este caso yo solo usaré `/fruits`, pues solo manipularé *frutas*.
 
-<div id="Método GET"><br></div>
+<div id="Método GET"></div>
 ### Método GET
 
 Para este ejemplo, este *endpoint* se llamará `/fruits`. Por defecto, este toma el método *GET*, y la función en este caso la llamaré `getFruits`. Este método servirá para pedir información a la base de datos.
@@ -118,7 +118,7 @@ Con este fragmento de código tenemos el método *GET* implementado, si vamos a 
 
 Los datos serán mostrados en orden alfabético.
 
-<div id="Método GET con Filtro"><br></div>
+<div id="Método GET con Filtro"></div>
 ### Método GET: Filtro por nombre
 
 Podemos buscar un dato en específico, para ello crearemos una nueva función.
@@ -196,7 +196,7 @@ def getFruit(fruit_name):
         })
 ```
 
-<div id="Método POST"><br></div>
+<div id="Método POST"></div>
 ### Método POST
 
 Con este método podremos añadir una fruta a la base de datos.
@@ -290,7 +290,7 @@ def setFruit():
     })
 ```
 
-<div id="Método PUT"><br></div>
+<div id="Método PUT"></div>
 ### Método PUT
 
 Este método nos permitirá indicar que queremos modificar un registro de la base de datos.
@@ -378,7 +378,7 @@ def editFruit(fruit_name):
     })
 ```
 
-<div><br></div>
+<div id="Método PATCH"></div>
 ### Método PATCH
 
 Este método es muy similar al método PUT, la diferencia entre ellos es que PUT se utiliza para actualizar un registro completo, mientras que PATCH solo modificarán algunos campos en el registro.
@@ -438,7 +438,7 @@ Ahora, si vamos por `GET` a `http://localhost:5000/fruits/peach` nos responderá
 }
 ```
 
-<div><br></div>
+<div id="Método DELETE"></div>
 ### Método DELETE
 
 Este método indicará que queremos eliminar un registro.
@@ -480,7 +480,7 @@ Ahora, si vamos por `GET` a `http://localhost:5000/fruits/peach` nos responderá
 }
 ```
 
-<div><br></div>
+<div id="Código Completo"></div>
 ### Código completo
 
 Finalmente, el código completo quedaría de la siguiente manera:

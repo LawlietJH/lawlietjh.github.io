@@ -10,16 +10,16 @@ page_id: 29
 
 En esta publicación veremos y entenderemos con ejemplos sencillos y prácticos lo que es SOLID.
 
-<div><br></div>
+
 ## ¿Qué es SOLID?
 
 SOLID es un acrónimo que representa cinco principios básicos de la programación orientada a objetos y el diseño. Es importante resaltar que **se trata de principios, no de reglas**.
 
-<div><br></div>
+
 ## Los 5 Principios S.O.L.I.D.
 <img class="general-img" src="/assets/images/029/SOLID.png" align="center">
 
-<div id="single-responsibility"><br></div>
+<div id="single-responsibility"></div>
 ### Single Responsibility
 
 "Una clase debe tener solo una responsabilidad, es decir, debe tener solo una razón para cambiar."
@@ -150,7 +150,7 @@ Processing debit payment type
 Verifying security code: 0372846
 ```
 
-<div id="openclosed"><br></div>
+<div id="openclosed"></div>
 ### Open/Closed Principle
 
 "Las entidades deberían estar abiertas para la extensión, pero cerradas para la modificación."
@@ -210,7 +210,7 @@ class Numbers:
         return bigger
 ```
 
-<div id="liskov-substitution"><br></div>
+<div id="liskov-substitution"></div>
 ### Liskov's Substitution
 
 "Si parece un pato, hace cuac como un pato, pero necesita pilas...
@@ -278,7 +278,7 @@ class Child(Person):
         self.tutor.payment()
 ```
 
-<div id="interface-segregation"><br></div>
+<div id="interface-segregation"></div>
 ### Interface Segregation
 
 "Un cliente no debería ser obligado a depender de métodos que no utiliza."
@@ -422,7 +422,7 @@ Resultados:
 {'name': 'Trash Metal', 'quantity': 4}
 ```
 
-<div id="dependency-inversion"><br></div>
+<div id="dependency-inversion"></div>
 ### Dependency Inversion
 
 "Este principio recomienda el uso de inyección de dependencias."
@@ -533,7 +533,7 @@ shopping_basket_2 = ShoppingBasket(mysql_db, credit_card)
 shopping_basket_2.buy(shopping)
 ```
 
-<div><br></div>
+
 ## Conclusión
 
 Los principios SOLID nos ayudan a tener un código muy limpio y escalable. En ellos, **Single Responsibility** se enfoca en las responsabilidades separadas, **Open/Closed** se basa en la extensión en lugar de la modificación, **Liskov's Sustitution** en tener herencias donde todos los métodos sean utilizados, **Interface Segregation** en tener interfaces donde se utilicen todos los métodos necesarios y no más que eso, y finalmente, **Dependency Inversion** en el cúal se contempla la *inyección de dependencias*.

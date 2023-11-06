@@ -33,7 +33,7 @@ Resultados:
 -rw-r--r-- 1 deleon 197121    460 Jul 16 21:06 index.html
 ```
 
-<div id="CLI"><br></div>
+<div id="CLI"></div>
 ### ¿Qué es una Interfaz de línea de Comandos (CLI)?
 
 La **interfaz de línea de comandos** (*command-line interface*) es un tipo de interfaz de usuario de computadora que permite a los usuarios dar instrucciones a algún programa informático o al sistema operativo por medio de una línea de texto simple. Debe notarse que los conceptos de *CLI*, *Shell* y *emulador de terminal* no son lo mismo, ya que *CLI* se refiere al paradigma, mientras que los otros son programas informáticos específicos, que usualmente en conjunto implementan la *CLI*. Sin embargo, los tres suelen usarse como sinónimos.

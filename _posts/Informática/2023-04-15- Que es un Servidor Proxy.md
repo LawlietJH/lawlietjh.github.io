@@ -17,7 +17,7 @@ El **almacenamiento de logs** de los sitios visitados y páginas vistas, permite
 
 Generalmente el servidor proxy se utiliza para la web. Se trata entonces de un **proxy HTTP**. Sin embargo, puede haber servidores proxy para cada protocolo de aplicación (**FTP**, etc.).
 
-<div id="Servidor-Proxy"><br></div>
+<div id="Servidor-Proxy"></div>
 
 ## ¿Cómo Funciona Un Servidor Proxy?
 
@@ -31,32 +31,32 @@ El caché utiliza normalmente un algoritmo para determinar cuándo un documento 
 
 Desde el punto de vista del usuario de la red local, el sistema funciona como si tuviera realmente un acceso directo a Internet. El usuario accede inmediatamente desde su ordenador a una página Web o recibe su correo electrónico, sin siquiera saber que el proxy existe.
  
-<div id="Tipos-Proxies"><br></div>
+<div id="Tipos-Proxies"></div>
 
 ## Diferentes tipos de proxies
 
 Hay cuatro tipos de servidores proxy que difieren según el nivel de anonimato y para qué se utilizan. Estos tipos incluyen Servidores Proxy Anónimos, Servidores Proxy de Alto Nivel de Anonimato, Servidores Proxy Transparentes y Servidores Proxy Inversos.
 
 
-<div id="Proxy-Anonimo"><br></div>
+<div id="Proxy-Anonimo"></div>
 
 ### Proxy Anónimo
 
 El tipo de proxy más conocido es el Proxy Anónimo que se usa para enmascarar la dirección IP de la computadora original. No hay forma de que la computadora de punto final que está recibiendo tus solicitudes descubra cuál es la IP de tu hogar y, si existe una necesidad de mayor seguridad, la conexión entre tú y el servidor proxy puede ser encriptada. Esta es la forma en que la mayoría de los usuarios individuales se conectan a través del proxy. Un Proxy Anónimo, además de ocultar la dirección IP, puede eliminar cookies, pop-ups, banners, scripts e información confidencial en los campos de texto (nombre de usuario y contraseña).
 
-<div id="Proxy-HAP"><br></div>
+<div id="Proxy-HAP"></div>
 
 ### Proxy de Alto Nivel de Anonimato (HAP)
 
 Los Proxy de Alto Nivel de Anonimato proporcionan incluso más anonimato que la conexión normal, ya que no se presenta como un servidor proxy, sino como una computadora común que crea una solicitud de acceso unidireccional a internet. De esta forma, el sitio web o la aplicación de punto final se refiere al servidor proxy como un cliente y no como un punto de nodo, lo que evita las restricciones que algunos sitios web y aplicaciones presentan en los servidores proxy.
 
-<div id="Proxy-Transparente"><br></div>
+<div id="Proxy-Transparente"></div>
 
 ### Proxy Transparente
 
 Si bien esto no es algo que la mayoría de los usuarios individuales considerarían como un servidor proxy, un proxy transparente solo se usa como servidor de paso y presenta la dirección IP doméstica como la computadora que realiza la solicitud. Como no hay anonimato, este tipo de servidor proxy no se usa para los mismos fines que los dos primeros, sino como una computadora para compartir recursos para algunos negocios. Este tipo de proxy es la base para muchos sistemas basados en la nube, que usan múltiples computadoras proxy, pero siempre muestran la dirección IP principal.
 
-<div id="Proxy-Inverso"><br></div>
+<div id="Proxy-Inverso"></div>
 
 ### Proxy inverso
 

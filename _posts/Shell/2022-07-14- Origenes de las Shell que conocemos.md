@@ -19,7 +19,7 @@ page_id: 8
 
 El **Thompson shell** es el primer *shell de* <a href="{{_014_unix}}">Unix</a> (*sh*), introducido en la primera versión de *Unix* en 1971, y fue escrito por **Ken Thompson**. Era un simple intérprete de comandos, no diseñado para secuencias de comandos, pero, sin embargo, introdujo varias funciones innovadoras. Presenta las características de la interfaz de línea de comandos y condujo al desarrollo de las *Shell* de *Unix* posteriores.
 
-<div id="Bourne"><br></div>
+<div id="Bourne"></div>
 ### El Remplazo de la Thompson Shell: Bourne Shell
 
 La **Bourne Shell** (el actual *sh*) incorporó características tales como control de procesos, redirección de entrada/salida, listado y lectura de ficheros, protección, comunicaciones y un lenguaje de órdenes para escribir programas por *lotes* o *Scripts*. Fue el intérprete usado en las primeras versiones de *Unix* y se convirtió en un estándar de facto.
@@ -28,14 +28,14 @@ Fue desarrollada por *Stephen Bourne*, de los Laboratorios Bell de AT&T. Vio la 
 
 Todos los sistemas de tipo *Unix* tienen al menos un intérprete compatible con el *Bourne shell*. Se encuentra dentro de la jerarquía de archivos de *Unix* en */bin/sh*. En algunos sistemas, tal como *BSD*, */bin/sh* es un *Bourne shell* o un equivalente, pero en otros sistemas, como muchas distribuciones de <a href="{{_016_gnu_linux}}">Linux</a>, */bin/sh* es un enlace simbólico a un *Shell* compatible con más características (como *Bash*). *POSIX* especifica su *Shell* estándar como un subconjunto estricto del *Korn shell*.
 
-<div id="Ksh"><br></div>
+<div id="Ksh"></div>
 ### KornShell: La Shell Basada en Bourne Shell
 
 **KornShell** (*ksh*) fue desarrollado por *David Korn* en *AT&T* en los Laboratorios Bell en *1980* y divulgado en *USENIX* el 14 de julio de 1983. Su desarrollo inicial se basó en el código de *Bourne Shell*. Otros contribuidores fueron los desarrolladores de los Laboratorios Bell *Mike Veach* y *Pat Sullivan* quienes escribieron el modo de edición *Emacs* y *Vi* para la línea de comandos. Es compatible con versiones anteriores de *Bourne Shell* e incluye muchas características del intérprete *C Shell* inspiradas a petición de los usuarios de los Laboratorios Bell.
 
 La principal ventaja de *ksh* sobre otros intérpretes de comandos tradicionales de *Unix*, es el uso como *lenguaje de programación*. Desde su concepción, se le agregaron gradualmente muchas capacidades.
 
-<div id="Bash"><br></div>
+<div id="Bash"></div>
 ### Bash: La Shell del Software Libre
 
 **GNU Bash** o simplemente **Bash** (*Bourne-again shell*) es una popular interfaz de usuario de línea de comandos, específicamente un *Shell* de *Unix*; así como un *lenguaje de Scripting*. Fue originalmente escrito por *Brian Fox* para el sistema operativo <a href="{{_015_gnu}}">GNU</a>, y pretendía ser el reemplazo de *software libre* del *Bourne Shell*. Lanzado por primera vez en *1989*, se ha utilizado ampliamente como el intérprete de inicio de sesión (login) predeterminado para la mayoría de las distribuciones de <a href="{{_016_gnu_linux}}">GNU/Linux</a>, y también de *Mac OS X* de Apple hasta la versión 10.15. Una versión también está disponible para Windows 10 y Android. También es el intérprete de órdenes de usuario predeterminado en Solaris 11.
@@ -46,7 +46,7 @@ El nombre del intérprete es un acrónimo de 'Bourne-again shell' (intérprete d
 
 Un agujero de seguridad en Bash que data de la *versión 1.03* (agosto de 1989), denominado *Shellshock*, fue descubierto a principios de septiembre de 2014 y recibió amplia atención de los medios. Rápidamente, provocó una serie de *ciberataques en Internet*. Los parches para corregir los errores se pusieron a disposición poco después de que se identificaron los errores.
 
-<div id="Zsh"><br></div>
+<div id="Zsh"></div>
 ### Z Shell: Una Bash Mejorada
 
 **Z shell** (o simplemente *zsh*) es un potente intérprete de comandos para sistemas operativos de tipo *Unix*, como por ejemplo los *BSD* o <a href="{{_016_gnu_linux}}">GNU/Linux</a>. La primera versión fue escrita por *Paul Falstad* en *1990*, cuando era estudiante en la *Universidad de Princeton*.

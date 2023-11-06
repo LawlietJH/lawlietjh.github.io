@@ -29,7 +29,7 @@ Se debe tomar en cuenta que el *hacking* no se refiere a la acción de infringir
 
 *Raymond* ha dicho que uno no pretende ser un hacker sólo para mostrar este emblema, pero sugiere que, en sus palabras, *"el uso de este emblema expresa la solidaridad con los objetivos y valores de los hackers, y la forma de vivir de un hacker"*.
 
-<div id="Glider"><br></div>
+<div id="Glider"></div>
 
 ## ¿Qué es un Glider?
 

@@ -19,7 +19,7 @@ Un archivo *JSON* tiene como extensión **.json**, además los datos que contien
 
 Aprender a interpretar JSON es fundamental para cualquier desarrollador, ya que es el formato de texto más ampliamente usado en el mundo para la comunicación entre software.
 
-<div id="Sintaxis JSON"><br></div>
+<div id="Sintaxis JSON"></div>
 ### Sintaxis básica de JSON
 
 ```json
@@ -40,7 +40,7 @@ Aprender a interpretar JSON es fundamental para cualquier desarrollador, ya que 
 
 JSON define 6 tipos de valores: *nulos*, *enteros*, *cadenas*, *booleanos*, *arreglos* y *objetos*.
 
-<div id="Reglas Sintaxis JSON"><br></div>
+<div id="Reglas Sintaxis JSON"></div>
 ### Reglas para sintaxis JSON
 
 *JSON* es muy estricto en cuanto a los tipos de datos soportados.
@@ -57,7 +57,7 @@ Las reglas de sintaxis *JSON* que hay que conocer:
 * Un solo objeto dentro de un *arreglo* debe terminar también con una coma.
 * Para escapar un carácter se debe utilizar un '\\' por delante.
 
-<div><br></div>
+
 ### Conclusión
 
 Como programador, es indispensable entender el formato JSON, la mayoría de las API actuales trabajan con él en lugar de XML (antes ampliamente empleado).

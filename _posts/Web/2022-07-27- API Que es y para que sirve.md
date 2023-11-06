@@ -14,12 +14,12 @@ page_id: 21
 
 La arquitectura de las *API* suele explicarse en términos de cliente y servidor. La aplicación que envía la solicitud se llama cliente, y la que envía la respuesta se llama servidor.
 
-<div id="Endpoint"><br></div>
+<div id="Endpoint"></div>
 ### ¿Qué es un Endpoint?
 
 Los **Endpoints** son las *URLs* de un *API* o un *backend* que responden a una petición, ejemplo `/users`, `/users/{id}/gallery`, etc. Por otra parte, un *Entrypoint* es la *URL* que el visitante habrá ingresado en su navegador para ver su aplicación o sitio, ejemplo `home.html`, `gallery.html`, etc. Los mismos *Entrypoints* tienen que calzar con un *Endpoint* para existir.
 
-<div id="Tipos de API"><br></div>
+<div id="Tipos de API"></div>
 ### ¿Cómo funcionan las API?
 
 Las *API* pueden funcionar de cuatro maneras diferentes, según el momento y el motivo de su creación.
@@ -40,7 +40,7 @@ La API de *WebSocket* es otro desarrollo moderno de la *API web* que utiliza *ob
 
 Estas son las *API* más populares y flexibles que se encuentran en la web actualmente. El cliente envía las solicitudes al servidor como datos. El servidor utiliza esta entrada del cliente para iniciar funciones internas y devuelve los datos de salida al cliente.
 
-<div id="API REST"><br></div>
+<div id="API REST"></div>
 ### ¿Qué son las API REST?
 
 **REST** son las siglas de *Representational State Transfer* o *Transferencia de Estado Representacional*. *REST* define un conjunto de funciones como *GET*, *POST*, *PUT*, *DELETE*, etc. que los clientes pueden utilizar para acceder a los datos del servidor. Los clientes y los servidores intercambian datos mediante *HTTP*.

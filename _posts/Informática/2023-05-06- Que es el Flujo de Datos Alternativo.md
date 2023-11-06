@@ -28,7 +28,7 @@ También deben saber que los *ADS* solo existirán en un Disco con formato *NTFS
 
 El *ADS* creado no aumentará el peso ni alterara el archivo original, estos **flujos de datos alternativos** coexisten con ellos pero siguen siendo externos, esto nos permite almacenar el contenido que sea en los *ADS* vinculados, pero no podremos pasarlos a otro dispositivo que no sea *NTFS*.
 
-<div id="Archivos-ADS"><br></div>
+<div id="Archivos-ADS"></div>
 
 ## Archivos con flujos alternativos de datos
 
@@ -39,7 +39,7 @@ Desde Windows 2000, el sistema de archivos **NTFS** en Windows ha admitido **flu
 
 Puedes pensar en estas secuencias adicionales como compartimientos secretos o capas dentro del archivo al que solo se puede acceder si se conoce el **"código secreto"**, que en este caso es solo el nombre de la secuencia. Esta no es una forma completamente segura de ocultar datos, como ilustraremos más adelante, pero es un truco divertido para conocer.
 
-<div id="Archivos-y-Clusters"><br></div>
+<div id="Archivos-y-Clusters"></div>
 
 ### Archivos y Clusters
 
@@ -57,7 +57,7 @@ Una ventaja de almacenar esta información en archivos es que Windows puede loca
 La unidad de almacenamiento fundamental de todos los sistemas de archivos compatibles es un clúster, que es un **grupo de sectores**.
 Esto permite que el sistema de archivos optimice la administración de los datos del disco independientemente del tamaño del sector del disco establecido por el controlador de disco de hardware. Si el disco a administrar es grande y grandes cantidades de datos se mueven y organizan en una sola operación, el administrador puede ajustar el tamaño del clúster para acomodar esto.
 
-<div id="Crear-Archivo-con-ADS"><br></div>
+<div id="Crear-Archivo-con-ADS"></div>
 
 ## ¿Cómo Crear Un Archivo de texto Con Flujos Alternativos?
 

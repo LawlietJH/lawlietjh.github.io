@@ -70,7 +70,7 @@ Ahora esos tres *bytes* se unen y tenemos el búfer de *24 bits*, que será *010
 
 Por tanto, 3 bytes sin codificar (en este caso, caracteres ASCII) entran y 4 caracteres ASCII codificados surgen como resultado.
 
-<div id="Tabla"><br></div>
+<div id="Tabla"></div>
 ## Tabla de índice Base64
 
 <table class="dark">
